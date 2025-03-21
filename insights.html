@@ -7,71 +7,77 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar collapsed">
-    <div class="sidebar-bg"></div>
-    <div class="sidebar-content">
-      <div class="sidebar-header">
-        <div class="logo"><h2>Robert A.T.</h2></div>
-        <button id="sidebarToggle" class="sidebar-toggle">&#9776;</button>
-      </div>
-      <nav class="sidebar-menu">
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Projects and work</a></li>
-          <li><a href="insights.html" class="active">Insights</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources." class="active">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
         </ul>
       </nav>
-      <div class="social-bar">
-        <ul>
-          <li><a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
-          <li><a href="#"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
-          <li><a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
-          <li><a href="#"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
-        </ul>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">Insights</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Read my thoughts, case studies and educational resources."</p>
       </div>
     </div>
-  </aside>
+  </header>
 
-  <!-- Main Content -->
-  <div id="main" class="main">
-    <!-- Hero Section for Insights -->
-    <header class="hero">
-      <div class="hero-intro">
-        <h1>Insights</h1>
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: Insights Page with Two Columns -->
+  <main class="main">
+    <section class="insights-container">
+      <!-- Left Column: Book List -->
+      <div class="insights-left">
+        <h2>Educational Resources</h2>
+        <div class="subject-group">
+          <h3>Process Improvement</h3>
+          <ul>
+            <li><a href="https://www.example.com/doe" target="_blank">Design of Experiments – Douglas Montgomery</a></li>
+            <li><a href="https://www.example.com/lean" target="_blank">Lean Thinking – James P. Womack</a></li>
+          </ul>
+        </div>
+        <div class="subject-group">
+          <h3>Innovative Design</h3>
+          <ul>
+            <li><a href="https://www.example.com/design" target="_blank">The Design of Everyday Things – Don Norman</a></li>
+            <li><a href="https://www.example.com/creativity" target="_blank">Steal Like an Artist – Austin Kleon</a></li>
+          </ul>
+        </div>
+        <div class="subject-group">
+          <h3>Prototyping & Engineering</h3>
+          <ul>
+            <li><a href="https://www.example.com/prototype" target="_blank">Prototyping: A Practitioner's Guide – Todd Zaki Warfel</a></li>
+            <li><a href="https://www.example.com/innovation" target="_blank">The Art of Innovation – Tom Kelley</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right Column: Introduction to Key Topics -->
+      <div class="insights-right">
+        <h2>Key Topics</h2>
         <p>
-          Explore my thoughts, experiences, and detailed case studies. Filter by tags to find articles on engineering, prototyping, or finance.
+          Click on any book title to explore the key concepts that shaped my education.
+          Topics include modern process improvement, innovative design principles and state-of-the-art prototyping.
         </p>
       </div>
-    </header>
-    <section class="content-section insights-section">
-      <!-- Tag Filters -->
-      <div class="filters">
-        <button class="tag-filter" data-tag="all">All</button>
-        <button class="tag-filter" data-tag="Engineering">Engineering</button>
-        <button class="tag-filter" data-tag="Prototyping">Prototyping</button>
-        <button class="tag-filter" data-tag="Finance">Finance</button>
-      </div>
-      <!-- Post Container -->
-      <div id="postContainer">
-        <article class="insight-post" data-tags="Engineering,Finance">
-          <span class="lang-label">IT</span>
-          <h2>How I tackled the POR FESR 21/27 project</h2>
-          <p>An in-depth look at my approach and the competitive results achieved.</p>
-          <a href="insights/insight1.html" class="read-more">Read more</a>
-        </article>
-        <article class="insight-post" data-tags="Prototyping,Engineering">
-          <span class="lang-label">EN</span>
-          <h2>Innovative Prototyping Techniques</h2>
-          <p>Exploring creative methods and design strategies to prototype effective solutions.</p>
-          <a href="insights/insight2.html" class="read-more">Read more</a>
-        </article>
-      </div>
-      <button id="loadMoreInsights">Load More Insights</button>
     </section>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

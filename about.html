@@ -7,69 +7,184 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar collapsed">
-    <div class="sidebar-bg"></div>
-    <div class="sidebar-content">
-      <div class="sidebar-header">
-        <div class="logo"><h2>Robert A.T.</h2></div>
-        <button id="sidebarToggle" class="sidebar-toggle">&#9776;</button>
-      </div>
-      <nav class="sidebar-menu">
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="work.html">Projects and work</a></li>
-          <li><a href="insights.html">Insights</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise." class="active">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts and case studies on engineering and prototyping.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
         </ul>
       </nav>
-      <div class="social-bar">
-        <ul>
-          <li><a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
-          <li><a href="#"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
-          <li><a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
-          <li><a href="#"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
-        </ul>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">About</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Discover my professional journey and technical expertise."</p>
       </div>
     </div>
-  </aside>
+  </header>
 
-  <!-- Main Content -->
-  <div id="main" class="main">
-    <!-- Hero Section for About -->
-    <header class="hero">
-      <div class="hero-intro">
-        <h1>About Me</h1>
-        <p>
-          Welcome to my professional profile. I’m an Industrial Engineer focused on efficiency, innovative design, and sustainable production.
-        </p>
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: About Page -->
+  <main class="main about-main">
+    <section class="about-container">
+      <!-- Left Column: Foto, Skill Bars, Nested Pentagons, Feedback -->
+      <div class="about-left">
+        <div class="profile-name">
+          <h2>Robert Alin Tapu</h2>
+        </div>
+        <div class="profile-photo">
+          <img src="images/sidebar-bg.jpg" alt="Profile Photo">
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="tech-item">
+            <span class="tech-label">Process Optimization</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Innovative Design</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Prototyping</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Project Management</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Digital Skills</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Nested Pentagons: Outer (100%) and Inner (actual skill levels) -->
+        <div class="radar-chart">
+          <svg viewBox="0 0 100 100">
+            <!-- Outer pentagon (100% scale) -->
+            <polygon class="pentagon-base" points="50,10 90,35 75,80 25,80 10,35" />
+            <!-- Inner pentagon (example values: 85, 80, 75, 70, 65 expressed as radii relative to 40px max) -->
+            <!-- We'll manually calculate approximate points -->
+            <polygon class="pentagon-skill" points="
+              50,20 
+              80,37 
+              68,70 
+              32,70 
+              20,37
+            " />
+          </svg>
+        </div>
+        <!-- Feedback Section: 6 attributes for peer rating -->
+        <div class="feedback-area">
+          <h3>Peer Feedback</h3>
+          <div class="feedback-item">
+            <label for="feedback-tech">Technical Expertise</label>
+            <input type="range" id="feedback-tech" name="feedback-tech" min="0" max="100" value="80">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-creativity">Creativity</label>
+            <input type="range" id="feedback-creativity" name="feedback-creativity" min="0" max="100" value="75">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-teamwork">Teamwork</label>
+            <input type="range" id="feedback-teamwork" name="feedback-teamwork" min="0" max="100" value="85">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-communication">Communication</label>
+            <input type="range" id="feedback-communication" name="feedback-communication" min="0" max="100" value="80">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-problem">Problem Solving</label>
+            <input type="range" id="feedback-problem" name="feedback-problem" min="0" max="100" value="75">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-adaptability">Adaptability</label>
+            <input type="range" id="feedback-adaptability" name="feedback-adaptability" min="0" max="100" value="80">
+          </div>
+          <div class="feedback-comments">
+            <label for="feedback-comment">Comments</label>
+            <textarea id="feedback-comment" name="feedback-comment" placeholder="Leave your comment here..."></textarea>
+          </div>
+          <button type="submit">Submit Feedback</button>
+        </div>
       </div>
-    </header>
-    <section class="content-section about-section">
-      <div class="about-block">
-        <h2>Education</h2>
-        <p><strong>Bachelor's in Industrial Engineering</strong> – University of Tuscia, Viterbo, Italy (Score: 89/110)</p>
-        <p><em>Erasmus Program:</em> Kielce University of Technology, Poland – Focus on production technologies, marketing, and microeconomics.</p>
-      </div>
-      <div class="about-block">
-        <h2>Work Experience</h2>
-        <p><strong>Consultant in Facilitated Finance</strong> – Developed project feasibility and funding strategies (e.g., POR FESR 21/27, Abruzzo Region). Although this role provided valuable insights, my true passion lies in product design and process engineering.</p>
-      </div>
-      <div class="about-block">
-        <h2>Skills</h2>
-        <p>Process Optimization, Innovative Design, Prototyping, Continuous Improvement, Project Management.</p>
-      </div>
-      <div class="about-block">
-        <h2>Languages</h2>
-        <p>Italian (Native), Romanian (Native), English (Fluent).</p>
-      </div>
-      <div class="about-block">
-        <h2>Interests</h2>
-        <p>Product Design, Lean Production, Automation, Sustainable Engineering.</p>
+      <!-- Right Column: CV Details -->
+      <div class="about-right">
+        <section class="cv-section">
+          <h2>Introduction</h2>
+          <p>
+            Industrial Engineer with a dynamic, multidisciplinary approach and strong technical background.
+            Passionate about process improvement and innovative design, I welcome challenging international opportunities.
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Work Experience</h2>
+          <p>
+            <strong>Business Process Consultant</strong> – SMP Consulting s.r.l.<br>
+            26/05/2023 – 30/08/2024, Orvieto, Italy<br>
+            • Enhanced and digitalized consultancy processes<br>
+            • Developed and managed a customized CRM solution<br>
+            • Conducted feasibility studies and risk assessments<br>
+            <a href="https://www.smpconsulting.com/" target="_blank">Visit SMP Consulting</a>
+
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Education and Training</h2>
+          <p>
+            <strong>Industrial Engineer</strong> – Università degli Studi della Tuscia, Viterbo, Italy<br>
+            Bachelor's Degree <br>
+            Erasmus Program: Kielce University of Technology, Poland
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Language Skills</h2>
+          <p>Italian, Romanian (Mother Tongues); English (Fluent)</p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Digital Skills</h2>
+          <p>
+            Solid Works, AutoCAD, SketchUp, Microsoft Office, Figma, Canva, C/C++, C#, Python (basic), Minitab, Odoo, Notion
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Additional Information</h2>
+          <p>Driving Licenses: A, B. Available for relocation.</p>
+        </section>
       </div>
     </section>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">

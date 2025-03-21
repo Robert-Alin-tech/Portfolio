@@ -7,52 +7,47 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar collapsed">
-    <div class="sidebar-bg"></div>
-    <div class="sidebar-content">
-      <div class="sidebar-header">
-        <div class="logo"><h2>Robert A.T.</h2></div>
-        <button id="sidebarToggle" class="sidebar-toggle">&#9776;</button>
-      </div>
-      <nav class="sidebar-menu">
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Projects and work</a></li>
-          <li><a href="insights.html">Insights</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design." class="active">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
         </ul>
       </nav>
-      <!-- Social bar in gold -->
-      <div class="social-bar">
-        <ul>
-          <li><a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
-          <li><a href="#"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
-          <li><a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
-          <li><a href="#"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
-        </ul>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">Home</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Industrial Engineer committed to continuous improvement and innovative design."</p>
       </div>
     </div>
-  </aside>
+  </header>
 
-  <!-- Main Content -->
-  <div id="main" class="main">
-    <!-- Hero Section (in normal flow) -->
-    <header class="hero">
-      <div class="hero-intro">
-        <h1>Professional Portfolio</h1>
-        <p>
-          Welcome to my portfolio. I’m an Industrial Engineer committed to continuous improvement, innovation, and sustainable design.
-        </p>
-      </div>
-    </header>
-    <!-- Scrollable Content -->
-    <section class="blog-content">
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: Home -->
+  <main class="main">
+    <!-- Content Section (no separate hero, banner is in the top menu) -->
+    <section class="content blog-content">
       <article class="post">
         <h2>POR FESR 21/27 Project</h2>
         <p>Discover how I secured funding for a competitive project in the Abruzzo Region.</p>
-        <a href="work.html#project1" class="read-more">Read more</a>
+        <a href="projects.html#project1" class="read-more">Read more</a>
       </article>
       <article class="post">
         <h2>Prototyping Workshop</h2>
@@ -66,7 +61,7 @@
         <button id="loadMoreInsights">Load More Insights</button>
       </div>
     </section>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
