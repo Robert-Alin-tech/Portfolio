@@ -316,47 +316,76 @@ html, body {
   color: #b38f2f;
 }
 
-/* Articoli Blog - Stile comune */
-.blog-article {
+/* Callouts per i libri (Left Column) */
+.callout {
+  padding: 15px;
+  border-radius: 8px;
   margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  background: linear-gradient(135deg, #fefcea, #f1da36);
 }
-.blog-article h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
+.callout h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #1A2930;
+}
+.callout ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.callout ul li {
   margin-bottom: 5px;
 }
-.blog-article h3 a {
-  color: #1A2930;
+.callout ul li a {
+  color: #D4AF37;
   text-decoration: none;
   transition: color 0.3s;
 }
-.blog-article h3 a:hover {
-  color: #D4AF37;
+.callout ul li a:hover {
+  color: #b38f2f;
 }
-.blog-article p {
+
+/* Callouts per gli Articoli (Right Column) */
+.callout-article {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #e2eafc, #a1c4fd);
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.callout-article h3 {
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  color: #1A2930;
+}
+.callout-article p {
   font-size: 1.1rem;
   line-height: 1.4;
 }
 
-/* Sezioni per Articoli */
-.articles-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  margin-bottom: 40px;
-}
-.articles-section.visible {
+/* Animazioni di Scroll per gli Articoli */
+.slide-in.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
-/* Titoli di sezione separati */
-#italian-articles h2, #english-articles h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #1A2930;
+/* Sezioni per Articoli Distinte */
+#italian-articles {
+  margin-bottom: 40px;
+}
+#english-articles {
+  margin-bottom: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .insights-container {
+    flex-direction: column;
+  }
+  .insights-left, .insights-right {
+    width: 100%;
+  }
 }
 
 

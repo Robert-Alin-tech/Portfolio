@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.padding = "0 40px";
   });
 
-  // Intersection Observer for articles sections animation
+  // Animazione per callouts degli articoli al scroll
+  const articleSections = document.querySelectorAll('.articles-section');
   const observerOptions = {
     threshold: 0.3
   };
@@ -33,12 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Once animated, stop observing
+        observer.unobserve(entry.target);
       }
     });
   };
 
   const observer = new IntersectionObserver(observerCallback, observerOptions);
-  const sections = document.querySelectorAll('.articles-section');
-  sections.forEach(section => observer.observe(section));
+  articleSections.forEach(section => observer.observe(section));
 });
