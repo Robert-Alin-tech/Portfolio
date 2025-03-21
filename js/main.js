@@ -25,22 +25,23 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.padding = "0 40px";
   });
 
-  // Insights: Tag filtering and Load More functionality
-  const tagFilters = document.querySelectorAll('.tag-filter');
-  const insightPosts = document.querySelectorAll('.insight-post');
-  const loadMoreBtn = document.getElementById('loadMoreInsights');
-
-  tagFilters.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tag = btn.getAttribute('data-tag');
+  // Insights: Tag filtering using select list and Load More functionality
+  const filterSelect = document.getElementById('filterSelect');
+  if (filterSelect) {
+    filterSelect.addEventListener('change', function() {
+      const selected = filterSelect.value;
+      const insightPosts = document.querySelectorAll('.insight-post');
       insightPosts.forEach(post => {
-        post.style.display = (tag === 'all' || post.getAttribute('data-tags').includes(tag)) ? 'block' : 'none';
+        const tags = post.getAttribute('data-tags');
+        post.style.display = (selected === 'all' || tags.includes(selected)) ? 'block' : 'none';
       });
     });
-  });
+  }
 
+  const loadMoreBtn = document.getElementById('loadMoreInsights');
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', () => {
+      const insightPosts = document.querySelectorAll('.insight-post');
       insightPosts.forEach(post => post.style.display = 'block');
       loadMoreBtn.style.display = 'none';
     });

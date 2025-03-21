@@ -40,8 +40,17 @@
     </ul>
   </div>
 
-  <!-- Main Content: Insights Page with Two Columns -->
+  <!-- Main Content: Insights Page with Two Columns and Select Filter -->
   <main class="main">
+    <section class="insights-filter">
+      <label for="filterSelect">Filter by subject:</label>
+      <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Prototyping">Prototyping</option>
+        <option value="Finance">Finance</option>
+      </select>
+    </section>
     <section class="insights-container">
       <!-- Left Column: Book List -->
       <div class="insights-left">
@@ -72,8 +81,8 @@
       <div class="insights-right">
         <h2>Key Topics</h2>
         <p>
-          Click on any book title to explore the key concepts that shaped my education.
-          Topics include modern process improvement, innovative design principles and state-of-the-art prototyping.
+          Use the select list above to filter the educational resources by subject.
+          Explore the key topics that shaped my learning in process improvement, design and prototyping.
         </p>
       </div>
     </section>

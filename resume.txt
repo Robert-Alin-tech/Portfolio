@@ -1,0 +1,1113 @@
+CODICE INDEX:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Portfolio of Robert A.T.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design." class="active">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">Home</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Industrial Engineer committed to continuous improvement and innovative design."</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: Home -->
+  <main class="main">
+    <!-- Content Section (no separate hero, banner is in the top menu) -->
+    <section class="content blog-content">
+      <article class="post">
+        <h2>POR FESR 21/27 Project</h2>
+        <p>Discover how I secured funding for a competitive project in the Abruzzo Region.</p>
+        <a href="projects.html#project1" class="read-more">Read more</a>
+      </article>
+      <article class="post">
+        <h2>Prototyping Workshop</h2>
+        <p>An event showcasing innovative prototyping techniques.</p>
+        <a href="insights.html#prototyping" class="read-more">Read more</a>
+      </article>
+      <div class="video-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="more-posts">
+        <button id="loadMoreInsights">Load More Insights</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+CODICE ABOUT:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Portfolio of Robert A.T.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise." class="active">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts and case studies on engineering and prototyping.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">About</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Discover my professional journey and technical expertise."</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: About Page -->
+  <main class="main about-main">
+    <section class="about-container">
+      <!-- Left Column: Foto, Skill Bars, Nested Pentagons, Feedback -->
+      <div class="about-left">
+        <div class="profile-name">
+          <h2>Robert Alin Tapu</h2>
+        </div>
+        <div class="profile-photo">
+          <img src="images/sidebar-bg.jpg" alt="Profile Photo">
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="tech-item">
+            <span class="tech-label">Process Optimization</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Innovative Design</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Prototyping</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Project Management</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">Digital Skills</span>
+            <div class="tech-bar">
+              <div class="tech-progress" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Nested Pentagons: Outer (100%) and Inner (actual skill levels) -->
+        <div class="radar-chart">
+          <svg viewBox="0 0 100 100">
+            <!-- Outer pentagon (100% scale) -->
+            <polygon class="pentagon-base" points="50,10 90,35 75,80 25,80 10,35" />
+            <!-- Inner pentagon (example values: 85, 80, 75, 70, 65 expressed as radii relative to 40px max) -->
+            <!-- We'll manually calculate approximate points -->
+            <polygon class="pentagon-skill" points="
+              50,20 
+              80,37 
+              68,70 
+              32,70 
+              20,37
+            " />
+          </svg>
+        </div>
+        <!-- Feedback Section: 6 attributes for peer rating -->
+        <div class="feedback-area">
+          <h3>Peer Feedback</h3>
+          <div class="feedback-item">
+            <label for="feedback-tech">Technical Expertise</label>
+            <input type="range" id="feedback-tech" name="feedback-tech" min="0" max="100" value="80">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-creativity">Creativity</label>
+            <input type="range" id="feedback-creativity" name="feedback-creativity" min="0" max="100" value="75">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-teamwork">Teamwork</label>
+            <input type="range" id="feedback-teamwork" name="feedback-teamwork" min="0" max="100" value="85">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-communication">Communication</label>
+            <input type="range" id="feedback-communication" name="feedback-communication" min="0" max="100" value="80">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-problem">Problem Solving</label>
+            <input type="range" id="feedback-problem" name="feedback-problem" min="0" max="100" value="75">
+          </div>
+          <div class="feedback-item">
+            <label for="feedback-adaptability">Adaptability</label>
+            <input type="range" id="feedback-adaptability" name="feedback-adaptability" min="0" max="100" value="80">
+          </div>
+          <div class="feedback-comments">
+            <label for="feedback-comment">Comments</label>
+            <textarea id="feedback-comment" name="feedback-comment" placeholder="Leave your comment here..."></textarea>
+          </div>
+          <button type="submit">Submit Feedback</button>
+        </div>
+      </div>
+      <!-- Right Column: CV Details -->
+      <div class="about-right">
+        <section class="cv-section">
+          <h2>Introduction</h2>
+          <p>
+            Industrial Engineer with a dynamic, multidisciplinary approach and strong technical background.
+            Passionate about process improvement and innovative design, I welcome challenging international opportunities.
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Work Experience</h2>
+          <p>
+            <strong>Business Process Consultant</strong> – SMP Consulting s.r.l.<br>
+            26/05/2023 – 30/08/2024, Orvieto, Italy<br>
+            • Enhanced and digitalized consultancy processes<br>
+            • Developed and managed a customized CRM solution<br>
+            • Conducted feasibility studies and risk assessments<br>
+            <a href="https://www.smpconsulting.com/" target="_blank">Visit SMP Consulting</a>
+
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Education and Training</h2>
+          <p>
+            <strong>Industrial Engineer</strong> – Università degli Studi della Tuscia, Viterbo, Italy<br>
+            Bachelor's Degree <br>
+            Erasmus Program: Kielce University of Technology, Poland
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Language Skills</h2>
+          <p>Italian, Romanian (Mother Tongues); English (Fluent)</p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Digital Skills</h2>
+          <p>
+            Solid Works, AutoCAD, SketchUp, Microsoft Office, Figma, Canva, C/C++, C#, Python (basic), Minitab, Odoo, Notion
+          </p>
+          
+        </section>
+        <section class="cv-section">
+          <h2>Additional Information</h2>
+          <p>Driving Licenses: A, B. Available for relocation.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+CODICE PROJECTS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Portfolio of Robert A.T.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency." class="active">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">Projects</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Explore my innovative projects that merge design and efficiency."</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: Projects -->
+  <main class="main">
+    <!-- Banner in top menu già presente -->
+    <section class="content work-section">
+      <div class="project-card">
+        <a href="insights/insight1.html">
+          <div class="project-img-container">
+            <img src="images/project1.jpg" alt="POR FESR 21/27">
+            <div class="project-overlay">
+              <h2>POR FESR 21/27</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="insights/insight2.html">
+          <div class="project-img-container">
+            <img src="images/project2.jpg" alt="Prototyping &amp; Design">
+            <div class="project-overlay">
+              <h2>Prototyping &amp; Design</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="insights/insight3.html">
+          <div class="project-img-container">
+            <img src="images/project3.jpg" alt="Hobbies &amp; Passions">
+            <div class="project-overlay">
+              <h2>Hobbies &amp; Passions</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+CODICE INSIGHTS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insights - Portfolio of Robert A.T.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources." class="active">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">Insights</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Read my thoughts, case studies and educational resources."</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content: Insights Page with Two Columns -->
+  <main class="main">
+    <section class="insights-container">
+      <!-- Left Column: Book List -->
+      <div class="insights-left">
+        <h2>Educational Resources</h2>
+        <div class="subject-group">
+          <h3>Process Improvement</h3>
+          <ul>
+            <li><a href="https://www.example.com/doe" target="_blank">Design of Experiments – Douglas Montgomery</a></li>
+            <li><a href="https://www.example.com/lean" target="_blank">Lean Thinking – James P. Womack</a></li>
+          </ul>
+        </div>
+        <div class="subject-group">
+          <h3>Innovative Design</h3>
+          <ul>
+            <li><a href="https://www.example.com/design" target="_blank">The Design of Everyday Things – Don Norman</a></li>
+            <li><a href="https://www.example.com/creativity" target="_blank">Steal Like an Artist – Austin Kleon</a></li>
+          </ul>
+        </div>
+        <div class="subject-group">
+          <h3>Prototyping & Engineering</h3>
+          <ul>
+            <li><a href="https://www.example.com/prototype" target="_blank">Prototyping: A Practitioner's Guide – Todd Zaki Warfel</a></li>
+            <li><a href="https://www.example.com/innovation" target="_blank">The Art of Innovation – Tom Kelley</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right Column: Introduction to Key Topics -->
+      <div class="insights-right">
+        <h2>Key Topics</h2>
+        <p>
+          Click on any book title to explore the key concepts that shaped my education.
+          Topics include modern process improvement, innovative design principles and state-of-the-art prototyping.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+CODICE CONTACTS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Portfolio of Robert A.T.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Menu with Banner -->
+  <header class="top-menu">
+    <div class="menu-container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts and case studies on engineering and prototyping.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries." class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="banner-left">
+        <h1 class="banner-title">Contact</h1>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Get in touch for collaborations, inquiries, or more information."</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Social Bar Fixed Bottom Left -->
+  <div class="social-fixed">
+    <ul>
+      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Banner in top menu già visibile -->
+    <section class="content contact-form-section">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <div class="extra-feedback">
+        <h3>Want to leave feedback on a collaboration or comment?</h3>
+        <a href="about.html#feedback" class="feedback-link">Leave Feedback</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+CODICE CSS/STYLE.CSS:
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP MENU */
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: #1A2930;
+  z-index: 1100;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+.menu-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.menu ul li {
+  margin: 0 15px;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.menu ul li a:hover,
+.menu ul li a.active {
+  color: #D4AF37;
+}
+
+/* HEADER BANNER */
+.header-banner {
+  width: 100%;
+  height: 0;
+  background: #1A2930;
+  color: #D4AF37;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+  padding: 0 40px;
+}
+.top-menu:hover .header-banner {
+  height: 33vh;
+  padding: 20px 40px;
+}
+.banner-left {
+  width: 40%;
+  text-align: left;
+}
+.banner-right {
+  width: 60%;
+  text-align: right;
+}
+.banner-title {
+  margin: 0;
+  font-size: 2.5rem;
+  opacity: 0;
+  animation: slideInLeft 0.5s forwards;
+}
+.banner-desc {
+  margin: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0;
+  animation: slideInRight 0.5s forwards;
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* SOCIAL BAR (Fixed Bottom Left) */
+.social-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #D4AF37;
+  padding: 10px;
+  border-radius: 20px;
+  z-index: 1100;
+}
+.social-fixed ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.social-fixed ul li a {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.social-fixed ul li a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+.social-fixed ul li a:hover {
+  transform: scale(1.2);
+}
+
+/* MAIN CONTENT */
+.main {
+  margin-top: 60px;
+  padding: 40px;
+  flex: 1;
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* GENERIC CONTENT SECTION */
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* PROJECTS: */
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+.project-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  overflow: hidden;
+}
+.project-img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10,10,10,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.project-overlay h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  padding: 0 10px;
+}
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* ABOUT PAGE SPECIFICS */
+.about-container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+.about-left {
+  flex: 0 0 30%;
+}
+.about-right {
+  flex: 1;
+}
+.profile-name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.profile-name h2 {
+  font-size: 1.8rem;
+  color: #1A2930;
+}
+.profile-photo {
+  margin-bottom: 20px;
+}
+.profile-photo img {
+  width: 100%;
+  border-radius: 10px; /* Rettangolo con angoli arrotondati */
+  object-fit: cover;
+}
+.skills, .radar-chart, .feedback-area {
+  margin-bottom: 20px;
+}
+.skills h3, .feedback-area h3 {
+  margin-bottom: 10px;
+}
+.tech-item {
+  margin-bottom: 10px;
+}
+.tech-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+.tech-bar {
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+.tech-progress {
+  height: 100%;
+  background: #D4AF37;
+  /* Le barre vengono impostate con valori variabili via inline style */
+}
+ 
+/* Radar Chart: due pentagoni concentrici */
+.radar-chart {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.radar-chart svg {
+  width: 150px;
+  height: 150px;
+}
+.pentagon-base {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1;
+}
+.pentagon-skill {
+  fill: #D4AF37;
+  opacity: 0.5;
+}
+
+/* Feedback Area */
+.feedback-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feedback-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.feedback-item label {
+  flex: 0 0 140px;
+}
+.feedback-item input[type="range"] {
+  flex: 1;
+}
+.feedback-comments label {
+  display: block;
+  margin-bottom: 5px;
+}
+.feedback-comments textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.feedback-area button {
+  width: 150px;
+  padding: 10px;
+  background: #D4AF37;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.feedback-area button:hover {
+  background: #b38f2f;
+}
+
+/* CV Details */
+.cv-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.cv-section {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.cv-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-left, .about-right {
+    width: 100%;
+  }
+  .work-section, .insights-section, .content {
+    padding: 20px;
+  }
+}
+
+/* PROJECTS, INSIGHTS, CONTACT: same generic styles as before */
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+.project-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  overflow: hidden;
+}
+.project-img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10,10,10,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.project-overlay h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  padding: 0 10px;
+}
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* INSIGHTS CONTAINER - Due colonne */
+.insights-container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+.insights-left {
+  flex: 0 0 30%;
+}
+.insights-right {
+  flex: 1;
+}
+.subject-group {
+  margin-bottom: 20px;
+}
+.subject-group h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #1A2930;
+}
+.subject-group ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.subject-group ul li {
+  margin-bottom: 5px;
+}
+.subject-group ul li a {
+  color: #D4AF37;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.subject-group ul li a:hover {
+  color: #b38f2f;
+}
+
+
+/* CONTACT FORM */
+.contact-form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contact-form-section input,
+.contact-form-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button[type="submit"] {
+  padding: 12px 20px;
+  background: #D4AF37;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+button[type="submit"]:hover {
+  background: #b38f2f;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  padding: 20px;
+  background: #1A2930;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  z-index: 5;
+}
+
+/* Footer push */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  flex: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-left, .about-right {
+    width: 100%;
+  }
+  .work-section, .insights-section, .content {
+    padding: 20px;
+  }
+}
+
+
+
+CODICE JS/MAIN.JS:
+document.addEventListener("DOMContentLoaded", function() {
+  // Top menu banner animation: update banner content on hover over menu links
+  const topMenu = document.querySelector('.top-menu');
+  const headerBanner = document.querySelector('.header-banner');
+  const bannerTitle = document.querySelector('.banner-title');
+  const bannerDesc = document.querySelector('.banner-desc');
+  const menuLinks = document.querySelectorAll('.menu a');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      const title = link.getAttribute('data-banner-title') || "";
+      const desc = link.getAttribute('data-banner-desc') || "";
+      bannerTitle.textContent = title;
+      bannerDesc.textContent = `"${desc}"`;
+    });
+  });
+
+  // Expand and collapse banner on top-menu hover
+  topMenu.addEventListener('mouseenter', () => {
+    headerBanner.style.height = "33vh";
+    headerBanner.style.padding = "20px 40px";
+  });
+  topMenu.addEventListener('mouseleave', () => {
+    headerBanner.style.height = "0";
+    headerBanner.style.padding = "0 40px";
+  });
+
+  // Insights: Tag filtering and Load More functionality
+  const tagFilters = document.querySelectorAll('.tag-filter');
+  const insightPosts = document.querySelectorAll('.insight-post');
+  const loadMoreBtn = document.getElementById('loadMoreInsights');
+
+  tagFilters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tag = btn.getAttribute('data-tag');
+      insightPosts.forEach(post => {
+        post.style.display = (tag === 'all' || post.getAttribute('data-tags').includes(tag)) ? 'block' : 'none';
+      });
+    });
+  });
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      insightPosts.forEach(post => post.style.display = 'block');
+      loadMoreBtn.style.display = 'none';
+    });
+  }
+});
