@@ -316,7 +316,7 @@ html, body {
   color: #b38f2f;
 }
 
-/* Articoli Blog */
+/* Articoli Blog - Stile comune per entrambe le sezioni */
 .blog-article {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -338,6 +338,16 @@ html, body {
 .blog-article p {
   font-size: 1.1rem;
   line-height: 1.4;
+}
+
+/* Sezioni per Articoli in Italiano e Inglese */
+.articles-italian, .articles-english {
+  margin-bottom: 40px;
+}
+.articles-italian h2, .articles-english h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1A2930;
 }
 
 
