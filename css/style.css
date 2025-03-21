@@ -286,7 +286,7 @@ html, body {
   border-top: 1px solid #ccc;
 }
 
-/* INSIGHTS PAGE SPECIFICS */
+/* INSIGHTS CONTAINER - Due Colonne */
 .insights-container {
   display: flex;
   gap: 40px;
@@ -298,29 +298,48 @@ html, body {
 .insights-right {
   flex: 1;
 }
-.subject-group {
-  margin-bottom: 20px;
-}
-.subject-group h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #1A2930;
-}
-.subject-group ul {
+
+/* Lista dei Libri */
+.book-list {
   list-style: none;
   padding-left: 10px;
 }
-.subject-group ul li {
-  margin-bottom: 5px;
+.book-list li {
+  margin-bottom: 10px;
 }
-.subject-group ul li a {
+.book-list li a {
   color: #D4AF37;
   text-decoration: none;
   transition: color 0.3s;
 }
-.subject-group ul li a:hover {
+.book-list li a:hover {
   color: #b38f2f;
 }
+
+/* Articoli Blog */
+.blog-article {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.blog-article h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+.blog-article h3 a {
+  color: #1A2930;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.blog-article h3 a:hover {
+  color: #D4AF37;
+}
+.blog-article p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 
 /* CONTACT FORM SECTION */
 .contact-form-section {
