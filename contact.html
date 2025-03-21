@@ -40,7 +40,7 @@
     </ul>
   </div>
 
-  <!-- Main Content: Contact -->
+  <!-- Main Content: Contact Form and Feedback Section -->
   <main class="main">
     <section class="content contact-form-section">
       <form id="contactForm">
@@ -56,40 +56,31 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Your message" required></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" class="btn-submit">Send</button>
       </form>
-      <!-- Feedback Section for Contact -->
+      
+      <!-- Feedback Section -->
       <div class="contact-feedback">
         <h3>If you've worked with me, please leave your valuable feedback:</h3>
         <div class="feedback-stars">
-          <!-- Le stelle saranno cliccabili; qui fornisco un esempio di 5 stelle con radio buttons -->
-          <label>
-            <input type="radio" name="rating" value="1">
-            <span class="star">&#9734;</span>
-          </label>
-          <label>
-            <input type="radio" name="rating" value="2">
-            <span class="star">&#9734;</span>
-          </label>
-          <label>
-            <input type="radio" name="rating" value="3">
-            <span class="star">&#9734;</span>
-          </label>
-          <label>
-            <input type="radio" name="rating" value="4">
-            <span class="star">&#9734;</span>
-          </label>
-          <label>
-            <input type="radio" name="rating" value="5">
-            <span class="star">&#9734;</span>
-          </label>
+          <!-- Star rating using radio buttons and labels -->
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5" title="5 stars">&#9733;</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4" title="4 stars">&#9733;</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3" title="3 stars">&#9733;</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2" title="2 stars">&#9733;</label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1" title="1 star">&#9733;</label>
         </div>
         <form id="contactFeedbackForm">
           <div class="form-group">
             <label for="feedback-comment">Feedback Comment</label>
             <textarea id="feedback-comment" name="feedback-comment" placeholder="Leave your feedback here..."></textarea>
           </div>
-          <button type="submit">Submit Feedback</button>
+          <button type="submit" class="btn-submit">Submit Feedback</button>
         </form>
       </div>
     </section>

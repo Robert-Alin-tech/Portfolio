@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
-
   const loadMoreBtn = document.getElementById('loadMoreInsights');
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', () => {
