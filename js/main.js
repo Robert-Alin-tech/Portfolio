@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.padding = "0 40px";
   });
 
-  // Animazione per callouts degli articoli al scroll
+  // Intersection Observer for articles callouts
   const articleSections = document.querySelectorAll('.articles-section');
   const observerOptions = {
     threshold: 0.3
