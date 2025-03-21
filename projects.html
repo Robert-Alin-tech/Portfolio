@@ -5,6 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Portfolio of Robert A.T.</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Includo qui alcune regole CSS specifiche per la pagina Projects, se vuoi mantenerle separate */
+    .work-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .project-card {
+      width: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-img-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      overflow: hidden;
+    }
+    .project-img-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 10, 10, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .project-overlay h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      color: #D4AF37;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
   <!-- Top Menu with Banner -->
@@ -40,11 +99,12 @@
     </ul>
   </div>
 
-  <!-- Main Content: Projects -->
+  <!-- Main Content: Projects Section -->
   <main class="main">
     <section class="content work-section">
-      <div class="project-card" id="project1">
-        <a href="insights/insight1.html">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <a href="projects/project1.html" target="_blank">
           <div class="project-img-container">
             <img src="images/project1.jpg" alt="POR FESR 21/27">
             <div class="project-overlay">
@@ -53,8 +113,9 @@
           </div>
         </a>
       </div>
-      <div class="project-card" id="project2">
-        <a href="insights/insight2.html">
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <a href="projects/project2.html" target="_blank">
           <div class="project-img-container">
             <img src="images/project2.jpg" alt="Prototyping &amp; Design">
             <div class="project-overlay">
@@ -63,8 +124,9 @@
           </div>
         </a>
       </div>
-      <div class="project-card" id="project3">
-        <a href="insights/insight3.html">
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <a href="projects/project3.html" target="_blank">
           <div class="project-img-container">
             <img src="images/project3.jpg" alt="Hobbies &amp; Passions">
             <div class="project-overlay">
