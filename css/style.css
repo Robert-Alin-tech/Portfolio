@@ -316,7 +316,7 @@ html, body {
   color: #b38f2f;
 }
 
-/* Articoli Blog - Stile comune per entrambe le sezioni */
+/* Articoli Blog - Stile comune */
 .blog-article {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -340,15 +340,25 @@ html, body {
   line-height: 1.4;
 }
 
-/* Sezioni per Articoli in Italiano e Inglese */
-.articles-italian, .articles-english {
+/* Sezioni per Articoli */
+.articles-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
   margin-bottom: 40px;
 }
-.articles-italian h2, .articles-english h2 {
+.articles-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Titoli di sezione separati */
+#italian-articles h2, #english-articles h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #1A2930;
 }
+
 
 
 /* CONTACT FORM SECTION */

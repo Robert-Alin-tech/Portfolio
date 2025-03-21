@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Top menu banner animation: update banner content on hover over menu links
+  // Top menu banner animation
   const topMenu = document.querySelector('.top-menu');
   const headerBanner = document.querySelector('.header-banner');
   const bannerTitle = document.querySelector('.banner-title');
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // Expand and collapse banner on top-menu hover
   topMenu.addEventListener('mouseenter', () => {
     headerBanner.style.height = "33vh";
     headerBanner.style.padding = "20px 40px";
@@ -25,24 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.padding = "0 40px";
   });
 
-  // Insights: Tag filtering using select list and Load More functionality
-  const filterSelect = document.getElementById('filterSelect');
-  if (filterSelect) {
-    filterSelect.addEventListener('change', function() {
-      const selected = filterSelect.value;
-      const insightPosts = document.querySelectorAll('.insight-post');
-      insightPosts.forEach(post => {
-        const tags = post.getAttribute('data-tags');
-        post.style.display = (selected === 'all' || tags.includes(selected)) ? 'block' : 'none';
-      });
+  // Intersection Observer for articles sections animation
+  const observerOptions = {
+    threshold: 0.3
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Once animated, stop observing
+      }
     });
-  }
-  const loadMoreBtn = document.getElementById('loadMoreInsights');
-  if (loadMoreBtn) {
-    loadMoreBtn.addEventListener('click', () => {
-      const insightPosts = document.querySelectorAll('.insight-post');
-      insightPosts.forEach(post => post.style.display = 'block');
-      loadMoreBtn.style.display = 'none';
-    });
-  }
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  const sections = document.querySelectorAll('.articles-section');
+  sections.forEach(section => observer.observe(section));
 });

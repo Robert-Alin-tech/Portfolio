@@ -40,46 +40,39 @@
     </ul>
   </div>
 
-  <!-- Main Content: Insights Page with Two Columns -->
+  <!-- Main Content: Insights -->
   <main class="main">
     <section class="insights-container">
-      <!-- Left Column: Libri Consigliati -->
-      <div class="insights-left">
+      <!-- Left Column: Books -->
+      <div class="insights-left fade-in">
         <h2>Books I Found Interesting</h2>
-        <ul class="book-list">
-          <li>
-            <a href="https://www.ibs.it/fondamenti-di-fisica-libro-david-halliday-robert-resnick/e/9788808187092" target="_blank">
-              Fondamenti di Fisica – Halliday, Resnick &amp; Walker
-            </a>
-          </li>
-          <li>
-            <a href="https://www.ibs.it/scienza-e-tecnologia-dei-materiali-libro-william-d-callister/e/9788838667846" target="_blank">
-              Scienza e tecnologia dei materiali – Callister
-            </a>
-          </li>
-          <li>
-            <a href="https://www.ibs.it/elementi-di-macchine-libro-marco-vitale/e/9788893850354" target="_blank">
-              Elementi di Macchine – Marco Vitale
-            </a>
-          </li>
-          <li>
-            <a href="https://www.ibs.it/fondamenti-di-elettrotecnica-libro-giorgio-rizzoni/e/9788838665675" target="_blank">
-              Fondamenti di Elettrotecnica – Rizzoni
-            </a>
-          </li>
-          <li>
-            <a href="https://www.ibs.it/meccanica-applicata-alle-macchine-libro-giuseppe-carbone/e/9788838668010" target="_blank">
-              Meccanica applicata alle macchine – Carbone
-            </a>
-          </li>
-        </ul>
+        <div class="subject-group">
+          <h3>Process Improvement &amp; Manufacturing</h3>
+          <ul class="book-list">
+            <li><a href="https://www.ibs.it/fondamenti-di-fisica-libro-david-halliday-robert-resnick/e/9788808187092" target="_blank">Design of Experiments – Douglas Montgomery</a></li>
+            <li><a href="https://www.ibs.it/lean-thinking-libro-james-p-womack/e/9788838667846" target="_blank">Lean Thinking – James P. Womack</a></li>
+          </ul>
+        </div>
+        <div class="subject-group">
+          <h3>Materials &amp; Mechanics</h3>
+          <ul class="book-list">
+            <li><a href="https://www.ibs.it/scienza-e-tecnologia-dei-materiali-libro-william-d-callister/e/9788838667846" target="_blank">Scienza e tecnologia dei materiali – Callister</a></li>
+            <li><a href="https://www.ibs.it/elementi-di-macchine-libro-marco-vitale/e/9788893850354" target="_blank">Elementi di Macchine – Marco Vitale</a></li>
+          </ul>
+        </div>
+        <div class="subject-group">
+          <h3>Electrotechnics &amp; Control</h3>
+          <ul class="book-list">
+            <li><a href="https://www.ibs.it/fondamenti-di-elettrotecnica-libro-giorgio-rizzoni/e/9788838665675" target="_blank">Fondamenti di Elettrotecnica – Rizzoni</a></li>
+          </ul>
+        </div>
       </div>
       
-      <!-- Right Column: Articoli divisi per Lingua -->
+      <!-- Right Column: Articles with Scroll Animation -->
       <div class="insights-right">
-        <!-- Sezione Articoli in Italiano -->
-        <div class="articles-italian">
-          <h2>Articoli in Italiano</h2>
+        <!-- Articoli in Italiano -->
+        <div class="articles-section fade-in" id="italian-articles">
+          <h2>Italian Articles</h2>
           <div class="blog-article">
             <h3>
               <a href="https://www.ilsole24ore.com/art/industria-5-0-la-sfida-ingegneria-italiana" target="_blank">
@@ -87,7 +80,7 @@
               </a>
             </h3>
             <p>
-              Un'analisi delle opportunità e delle sfide dell'Industria 5.0 nel contesto italiano.
+              Un'analisi delle opportunit&agrave; e delle sfide dell'Industria 5.0 nel contesto italiano.
             </p>
           </div>
           <div class="blog-article">
@@ -111,8 +104,8 @@
             </p>
           </div>
         </div>
-        <!-- Sezione Articoli in Inglese -->
-        <div class="articles-english">
+        <!-- Articoli in Inglese -->
+        <div class="articles-section fade-in" id="english-articles">
           <h2>Articles in English</h2>
           <div class="blog-article">
             <h3>
@@ -141,7 +134,7 @@
               </a>
             </h3>
             <p>
-              A technical paper discussing the challenges and opportunities in smart manufacturing for the modern industrial sector.
+              A technical paper discussing the challenges and opportunities in smart manufacturing.
             </p>
           </div>
         </div>
