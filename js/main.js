@@ -1,69 +1,47 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const sidebar = document.getElementById("sidebar");
-  const toggleBtn = document.getElementById("sidebarToggle");
-  const mainContent = document.getElementById("main");
-  const footer = document.querySelector('.footer');
+  // Top menu banner animation: update banner content on hover over menu links
+  const topMenu = document.querySelector('.top-menu');
+  const headerBanner = document.querySelector('.header-banner');
+  const bannerTitle = document.querySelector('.banner-title');
+  const bannerDesc = document.querySelector('.banner-desc');
+  const menuLinks = document.querySelectorAll('.menu a');
 
-  // Initialize sidebar state
-  function initSidebar() {
-    sidebar.classList.add("collapsed");
-    mainContent.style.marginLeft = "125px";
-    footer.style.marginLeft = "125px";
-    footer.style.width = "calc(100% - 125px)";
-  }
-  initSidebar();
-
-  // Sidebar toggle (for mobile)
-  toggleBtn.addEventListener("click", function() {
-    sidebar.classList.toggle("collapsed");
-    if (sidebar.classList.contains("collapsed")) {
-      mainContent.style.marginLeft = "125px";
-      footer.style.marginLeft = "125px";
-      footer.style.width = "calc(100% - 125px)";
-    } else {
-      mainContent.style.marginLeft = "250px";
-      footer.style.marginLeft = "250px";
-      footer.style.width = "calc(100% - 250px)";
-    }
+  menuLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      const title = link.getAttribute('data-banner-title') || "";
+      const desc = link.getAttribute('data-banner-desc') || "";
+      bannerTitle.textContent = title;
+      bannerDesc.textContent = `"${desc}"`;
+    });
   });
 
-  // Sidebar expand on mouseenter, collapse on mouseleave
-  sidebar.addEventListener("mouseenter", function() {
-    sidebar.classList.remove("collapsed");
-    mainContent.style.marginLeft = "250px";
-    footer.style.marginLeft = "250px";
-    footer.style.width = "calc(100% - 250px)";
+  // Expand and collapse banner on top-menu hover
+  topMenu.addEventListener('mouseenter', () => {
+    headerBanner.style.height = "33vh";
+    headerBanner.style.padding = "20px 40px";
   });
-  sidebar.addEventListener("mouseleave", function() {
-    sidebar.classList.add("collapsed");
-    mainContent.style.marginLeft = "125px";
-    footer.style.marginLeft = "125px";
-    footer.style.width = "calc(100% - 125px)";
+  topMenu.addEventListener('mouseleave', () => {
+    headerBanner.style.height = "0";
+    headerBanner.style.padding = "0 40px";
   });
 
-  // Insights: Tag filtering and "Load More" functionality
+  // Insights: Tag filtering and Load More functionality
   const tagFilters = document.querySelectorAll('.tag-filter');
   const insightPosts = document.querySelectorAll('.insight-post');
   const loadMoreBtn = document.getElementById('loadMoreInsights');
 
   tagFilters.forEach(btn => {
     btn.addEventListener('click', () => {
-      let tag = btn.getAttribute('data-tag');
+      const tag = btn.getAttribute('data-tag');
       insightPosts.forEach(post => {
-        if (tag === 'all' || post.getAttribute('data-tags').includes(tag)) {
-          post.style.display = 'block';
-        } else {
-          post.style.display = 'none';
-        }
+        post.style.display = (tag === 'all' || post.getAttribute('data-tags').includes(tag)) ? 'block' : 'none';
       });
     });
   });
 
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', () => {
-      insightPosts.forEach(post => {
-        post.style.display = 'block';
-      });
+      insightPosts.forEach(post => post.style.display = 'block');
       loadMoreBtn.style.display = 'none';
     });
   }
