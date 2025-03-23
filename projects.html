@@ -5,65 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Portfolio of Robert A.T.</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Includo qui alcune regole CSS specifiche per la pagina Projects, se vuoi mantenerle separate */
-    .work-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      padding: 20px;
-      justify-content: center;
-    }
-    .project-card {
-      width: 300px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    .project-img-container {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 ratio */
-      overflow: hidden;
-    }
-    .project-img-container img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: opacity 0.3s ease;
-    }
-    .project-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(10, 10, 10, 0.8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .project-overlay h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.8rem;
-      color: #D4AF37;
-      text-align: center;
-      padding: 0 10px;
-    }
-    .project-card:hover .project-overlay {
-      opacity: 1;
-    }
-  </style>
 </head>
 <body>
   <!-- Top Menu with Banner -->
@@ -92,50 +33,108 @@
   <!-- Social Bar Fixed Bottom Left -->
   <div class="social-fixed">
     <ul>
-      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
       <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
       <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
       <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
     </ul>
   </div>
 
-  <!-- Main Content: Projects Section -->
+  <!-- Main Content: Projects -->
   <main class="main">
-    <section class="content work-section">
-      <!-- Project Card 1 -->
-      <div class="project-card">
-        <a href="projects/project1.html" target="_blank">
-          <div class="project-img-container">
-            <img src="images/project1.jpg" alt="POR FESR 21/27">
-            <div class="project-overlay">
-              <h2>POR FESR 21/27</h2>
+    <div class="projects-controls">
+      <div class="filter-select">
+        <select id="project-filter">
+          <option value="all">All Categories</option>
+          <option value="engineering">Engineering</option>
+          <option value="design">Design</option>
+          <option value="research">Research</option>
+        </select>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search projects...">
+      </div>
+    </div>
+
+    <div class="projects-list">
+      <!-- Project Item 1 -->
+      <div class="project-item" data-category="engineering" data-status="completed">
+        <div class="project-summary">
+          <div class="project-meta">
+            <h3>POR FESR 21/27</h3>
+            <div class="project-info">
+              <span class="category">Engineering</span>
+              <span class="status completed">Completed</span>
             </div>
           </div>
-        </a>
+          <div class="expand-icon">▼</div>
+        </div>
+
+        <div class="project-expanded">
+          <div class="expanded-content">
+            <section class="project-section abstract">
+              <h4>Abstract</h4>
+              <p>Secured regional funding for industrial innovation through advanced process optimization...</p>
+            </section>
+
+            <section class="project-section objectives">
+              <h4>Objectives</h4>
+              <ul>
+                <li>Develop sustainable manufacturing processes</li>
+                <li>Implement Industry 4.0 technologies</li>
+                <li>Optimize resource allocation</li>
+              </ul>
+            </section>
+
+            <section class="project-section documentation">
+              <h4>Documentation</h4>
+              <div class="doc-grid">
+                <a href="#" class="doc-item">Technical Report</a>
+                <a href="#" class="doc-item">Financial Plan</a>
+                <a href="#" class="doc-item">Timeline</a>
+              </div>
+            </section>
+          </div>
+          <div class="project-footer">
+            <a href="projects/por-fesr.html" class="cta-button">View Full Project</a>
+          </div>
+        </div>
       </div>
-      <!-- Project Card 2 -->
-      <div class="project-card">
-        <a href="projects/project2.html" target="_blank">
-          <div class="project-img-container">
-            <img src="images/project2.jpg" alt="Prototyping &amp; Design">
-            <div class="project-overlay">
-              <h2>Prototyping &amp; Design</h2>
+
+      <!-- Project Item 2 -->
+      <div class="project-item" data-category="design" data-status="in-progress">
+        <div class="project-summary">
+          <div class="project-meta">
+            <h3>Prototyping Workshop</h3>
+            <div class="project-info">
+              <span class="category">Design</span>
+              <span class="status in-progress">In Progress</span>
             </div>
           </div>
-        </a>
-      </div>
-      <!-- Project Card 3 -->
-      <div class="project-card">
-        <a href="projects/project3.html" target="_blank">
-          <div class="project-img-container">
-            <img src="images/project3.jpg" alt="Hobbies &amp; Passions">
-            <div class="project-overlay">
-              <h2>Hobbies &amp; Passions</h2>
-            </div>
+          <div class="expand-icon">▼</div>
+        </div>
+
+        <div class="project-expanded">
+          <div class="expanded-content">
+            <section class="project-section abstract">
+              <h4>Abstract</h4>
+              <p>Advanced prototyping techniques combining traditional manufacturing with 3D printing...</p>
+            </section>
+
+            <section class="project-section gallery">
+              <h4>Prototype Gallery</h4>
+              <div class="gallery-grid">
+                <img src="images/prototype1.jpg" alt="Prototype 1">
+                <img src="images/prototype2.jpg" alt="Prototype 2">
+              </div>
+            </section>
           </div>
-        </a>
+          <div class="project-footer">
+            <a href="projects/prototyping.html" class="cta-button">View Full Project</a>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -143,6 +142,27 @@
     <p>&copy; 2025 Robert A.T. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Project expansion functionality
+    document.querySelectorAll('.project-summary').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.closest('.project-item');
+        parent.classList.toggle('active');
+        parent.querySelector('.expand-icon').textContent = 
+          parent.classList.contains('active') ? '▲' : '▼';
+      });
+    });
+
+    // Filter functionality
+    document.getElementById('project-filter').addEventListener('change', function() {
+      const filter = this.value;
+      document.querySelectorAll('.project-item').forEach(project => {
+        project.style.display = (filter === 'all' || project.dataset.category === filter) ? 
+          'block' : 'none';
+      });
+    });
+  });
+  </script>
 </body>
 </html>
