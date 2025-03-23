@@ -915,3 +915,129 @@ body {
 .slide-in-up {
   animation: slideInUp 1s ease-out forwards;
 }
+
+/* Projects Page */
+.projects-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
+.innovation-board {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  border-left: 2px solid #D4AF37;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline-date {
+  color: #D4AF37;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.timeline-content {
+  background: rgba(212, 175, 55, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #2C3E50;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #D4AF37;
+  transition: width 0.5s ease;
+}
+
+.project-stats {
+  display: grid;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px;
+  background: #1A2930;
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Project Items */
+.project-item {
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.project-summary {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-expanded {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.project-item.active .project-expanded {
+  max-height: 1000px;
+}
+
+.expanded-content {
+  padding: 20px;
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* Template Specific Styles */
+.tech-diagram {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.model-architecture {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.prototype-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
