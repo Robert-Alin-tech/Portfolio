@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const bannerDesc = document.querySelector('.banner-desc');
   const menuLinks = document.querySelectorAll('.menu a');
 
+  // Banner hover logic
   menuLinks.forEach(link => {
     link.addEventListener('mouseenter', () => {
       const title = link.getAttribute('data-banner-title') || "";
@@ -19,26 +20,63 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.height = "33vh";
     headerBanner.style.padding = "20px 40px";
   });
+
   topMenu.addEventListener('mouseleave', () => {
     headerBanner.style.height = "0";
     headerBanner.style.padding = "0 40px";
   });
 
-  // Intersection Observer for articles callouts
-  const articleSections = document.querySelectorAll('.articles-section');
-  const observerOptions = {
-    threshold: 0.3
+  // Radar Chart Configuration
+  const skills = {
+    "Process Optimization": 85,
+    "Innovative Design": 80,
+    "Prototyping": 75,
+    "Project Management": 70,
+    "Digital Skills": 65
   };
 
-  const observerCallback = (entries, observer) => {
+  const radarChart = document.querySelector('.radar-chart');
+  const points = [];
+  
+  Object.values(skills).forEach((percent, index) => {
+    const angle = (index * 72 - 90) * (Math.PI / 180);
+    const radius = 40 * (percent / 100);
+    const x = 50 + radius * Math.cos(angle);
+    const y = 50 + radius * Math.sin(angle);
+    points.push(`${x},${y}`);
+    
+    // Create skill labels
+    const label = document.createElement('div');
+    label.className = 'skill-label';
+    label.textContent = Object.keys(skills)[index];
+    label.setAttribute('data-skill', Object.keys(skills)[index]);
+    radarChart.appendChild(label);
+  });
+
+  document.querySelector('.pentagon-skill').setAttribute('points', points.join(' '));
+
+  // CV Section Animations
+  const observerOptions = {
+    threshold: 0.2
+  };
+
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateX(0)";
       }
     });
-  };
+  }, observerOptions);
 
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  articleSections.forEach(section => observer.observe(section));
+  document.querySelectorAll('.cv-section').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Contact Card Animation
+  const contactCard = document.querySelector('.contact-card');
+  if (contactCard) {
+    contactCard.style.opacity = "1";
+    contactCard.style.transform = "translateY(0)";
+  }
 });

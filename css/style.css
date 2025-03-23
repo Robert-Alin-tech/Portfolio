@@ -631,3 +631,91 @@ body {
     padding: 20px;
   }
 }
+
+/* ANIMATIONS */
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.slide-in-down {
+  animation: slideInDown 0.6s ease-out forwards;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  background: linear-gradient(145deg, #1A2930, #2C3E50);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 8px;
+}
+
+.contact-item .icon {
+  font-size: 1.5rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.contact-info label {
+  font-weight: bold;
+  color: #D4AF37;
+  font-size: 0.9rem;
+}
+
+.contact-info p {
+  margin: 5px 0 0;
+  color: #fff;
+}
+
+/* RADAR CHART IMPROVEMENTS */
+.radar-chart {
+  position: relative;
+}
+
+.skill-label {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #D4AF37;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80px;
+}
+
+.skill-label[data-skill="Process Optimization"] { top: 10%; left: 50%; }
+.skill-label[data-skill="Innovative Design"] { top: 35%; left: 90%; }
+.skill-label[data-skill="Prototyping"] { top: 80%; left: 70%; }
+.skill-label[data-skill="Project Management"] { top: 80%; left: 30%; }
+.skill-label[data-skill="Digital Skills"] { top: 35%; left: 10%; }
+
+/* CV SECTION ANIMATIONS */
+.cv-section {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.cv-section:nth-child(1) { animation-delay: 0.2s; }
+.cv-section:nth-child(2) { animation-delay: 0.4s; }
+.cv-section:nth-child(3) { animation-delay: 0.6s; }
+.cv-section:nth-child(4) { animation-delay: 0.8s; }
+.cv-section:nth-child(5) { animation-delay: 1.0s; }
+.cv-section:nth-child(6) { animation-delay: 1.2s; }
