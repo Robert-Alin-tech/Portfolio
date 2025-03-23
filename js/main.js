@@ -56,22 +56,28 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector('.pentagon-skill').setAttribute('points', points.join(' '));
 
   // CV Section Animations
-  const observerOptions = {
-    threshold: 0.2
-  };
+  // Modifica l'Observer
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px"
+};
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      if (entry.target.classList.contains('cv-section')) {
         entry.target.style.opacity = "1";
         entry.target.style.transform = "translateX(0)";
       }
-    });
-  }, observerOptions);
-
-  document.querySelectorAll('.cv-section').forEach(section => {
-    observer.observe(section);
+    }
   });
+}, observerOptions);
+
+// Applica l'Observer a tutte le sezioni
+document.querySelectorAll('.cv-section').forEach((section, index) => {
+  section.style.transitionDelay = `${index * 0.2}s`;
+  observer.observe(section);
+});
 
   // Contact Card Animation
   const contactCard = document.querySelector('.contact-card');
