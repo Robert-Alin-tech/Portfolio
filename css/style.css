@@ -1041,3 +1041,153 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
+/* Insights Page */
+.insights-hero {
+  background: linear-gradient(135deg, #1A2930 0%, #2C3E50 100%);
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.knowledge-map h2 {
+  font-size: 2.5rem;
+  color: #D4AF37;
+  margin-bottom: 1rem;
+}
+
+.insights-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background: #D4AF37;
+  color: #1A2930;
+  font-weight: bold;
+}
+
+.language-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid #555;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.insight-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37;
+}
+
+.book-cover {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.book-meta {
+  flex: 1;
+  padding-left: 1.5rem;
+}
+
+.book-link {
+  color: #D4AF37;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.category-tag {
+  background: rgba(212, 175, 55, 0.2);
+  color: #D4AF37;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.knowledge-network {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+}
+
+.concept-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.concept-node {
+  padding: 1.5rem;
+  background: #1A2930;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #D4AF37;
+}
