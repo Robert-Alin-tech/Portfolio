@@ -9,163 +9,116 @@
 <body>
   <!-- Top Menu with Banner -->
   <header class="top-menu">
-    <div class="menu-container">
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="The cognitive foundry of industrial innovation." class="active">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's engineer success together.">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-banner">
-      <div class="banner-left">
-        <h1 class="banner-title">Insights</h1>
-      </div>
-      <div class="banner-right">
-        <p class="banner-desc">"The cognitive foundry of industrial innovation."</p>
-      </div>
-    </div>
+    <!-- ... (stesso header delle altre pagine) ... -->
   </header>
 
   <!-- Social Bar Fixed Bottom Left -->
   <div class="social-fixed">
-    <ul>
-      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
-      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
-      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
-      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
-    </ul>
+    <!-- ... (stesso social bar delle altre pagine) ... -->
   </div>
 
   <!-- Main Content -->
   <main class="main">
-    <section class="insights-hero slide-in-down">
-      <div class="knowledge-map">
-        <h2>Industrial Intelligence Matrix</h2>
-        <p>Navigating the convergence of traditional engineering and modern technology</p>
-      </div>
-    </section>
-
-    <div class="insights-controls slide-in-right">
-      <div class="search-box">
-        <input type="text" id="knowledge-search" placeholder="Search insights...">
-      </div>
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="articles">Articles</button>
-        <button class="filter-btn" data-filter="books">Books</button>
-        <button class="filter-btn" data-filter="videos">Videos</button>
-        <div class="language-toggle">
-          <button class="lang-btn active" data-lang="all">🌐 All</button>
-          <button class="lang-btn" data-lang="en">🇬🇧 ENG</button>
-          <button class="lang-btn" data-lang="it">🇮🇹 ITA</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="insights-grid">
-      <!-- Libri Consigliati -->
-      <article class="insight-card book en" data-category="books">
-        <div class="card-header">
-          <img src="images/book-design-of-experiments.jpg" alt="Book Cover" class="book-cover">
-          <div class="book-meta">
-            <h3>Design of Experiments</h3>
-            <p class="author">Douglas Montgomery</p>
-            <div class="book-actions">
-              <a href="https://www.amazon.com/Design-Experiments-Douglas-C-Montgomery/dp/1118146921" target="_blank" class="book-link">View on Amazon</a>
-              <span class="category-tag">Statistics</span>
+    <div class="insights-container">
+      <!-- Left Column: Video Section -->
+      <div class="insights-left slide-in-down">
+        <section class="video-section">
+          <h2>Featured Videos</h2>
+          
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
             </div>
+            <h3>Industry 5.0: The Human-Centric Revolution</h3>
+            <p>Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing</p>
           </div>
-        </div>
-        <div class="card-body">
-          <p class="book-review">Essential guide for understanding experimental design in industrial contexts. My personal bible for process optimization.</p>
-        </div>
-      </article>
 
-      <!-- Articolo Italiano -->
-      <article class="insight-card article it" data-category="articles">
-        <div class="card-header">
-          <span class="category-tag">Industry 5.0</span>
-          <h3>L'Impatto dell'Industria 5.0 in Italia</h3>
-        </div>
-        <div class="card-body">
-          <p>Analisi approfondita sulle opportunità della nuova rivoluzione industriale per le PMI italiane...</p>
-          <a href="https://example.com/italian-article" target="_blank" class="cta-link">Leggi l'articolo →</a>
-        </div>
-      </article>
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/OxIwIMgUJCE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h3>Industrial Automation Fundamentals</h3>
+            <p>Comprehensive guide to modern automation systems in manufacturing environments</p>
+          </div>
 
-      <!-- Video Inglese -->
-      <article class="insight-card video en" data-category="videos">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="card-body">
-          <h3>AI in Manufacturing</h3>
-          <p>Deep dive into practical AI applications for production optimization...</p>
-        </div>
-      </article>
-
-      <!-- Altri elementi... -->
-    </div>
-
-    <section class="knowledge-network slide-in-up">
-      <h3>Explore Connections</h3>
-      <div class="concept-map">
-        <div class="concept-node" data-concept="industry40">Industry 4.0</div>
-        <div class="concept-node" data-concept="lean">Lean Manufacturing</div>
-        <div class="concept-node" data-concept="ai">AI Integration</div>
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/4QAz34Xjb04" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h3>AI in Production Systems</h3>
+            <p>Webinar on practical AI implementations for quality control and predictive maintenance</p>
+          </div>
+        </section>
       </div>
-    </section>
+
+      <!-- Right Column: Resources -->
+      <div class="insights-right slide-in-right">
+        <section class="knowledge-section">
+          <h2>Essential Library</h2>
+          
+          <div class="knowledge-card">
+            <h3>📚 Industrial Engineering</h3>
+            <ul class="resource-list">
+              <li>
+                <a href="https://www.amazon.com/Factory-Physics-Foundations-Management-Engineering/dp/1577667395" target="_blank">
+                  Factory Physics: Foundations of Manufacturing Management
+                </a>
+                <span class="author">by Wallace J. Hopp</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Principles-Industrial-Engineering-Abhijit-Bhattacharya/dp/0367873180" target="_blank">
+                  Principles of Industrial Engineering
+                </a>
+                <span class="author">by Abhijit Bhattacharya</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="knowledge-card">
+            <h3>📈 Industrial Economics</h3>
+            <ul class="resource-list">
+              <li>
+                <a href="https://www.amazon.com/Industrial-Organization-Markets-Strategies-Paul/dp/1107687890" target="_blank">
+                  Industrial Organization: Markets and Strategies
+                </a>
+                <span class="author">by Paul Belleflamme</span>
+              </li>
+              <li>
+                <a href="https://www.amazon.com/Modern-Industrial-Organization-Theory-Practice/dp/1292159953" target="_blank">
+                  Modern Industrial Organization
+                </a>
+                <span class="author">by Dennis W. Carlton</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="article-section">
+          <h2>Featured Articles</h2>
+          <div class="article-card">
+            <h3>🇮🇹 Automazione Industriale in Italia</h3>
+            <p>Analisi dello stato dell'arte e prospettive future per le PMI italiane</p>
+            <a href="#" class="cta-link">Leggi l'articolo →</a>
+          </div>
+          
+          <div class="article-card">
+            <h3>🇬🇧 Sustainable Manufacturing Trends</h3>
+            <p>How AI is driving eco-friendly production practices</p>
+            <a href="#" class="cta-link">Read Article →</a>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
+    <!-- ... (stesso footer delle altre pagine) ... -->
   </footer>
 
   <script>
+  // JavaScript per animazioni e interattività
   document.addEventListener('DOMContentLoaded', function() {
-    // Filtri combinati
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const langButtons = document.querySelectorAll('.lang-btn');
-    const searchInput = document.getElementById('knowledge-search');
-
-    function filterContent() {
-      const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-      const activeLang = document.querySelector('.lang-btn.active').dataset.lang;
-      const searchTerm = searchInput.value.toLowerCase();
-
-      document.querySelectorAll('.insight-card').forEach(card => {
-        const categoryMatch = activeFilter === 'all' || card.dataset.category === activeFilter;
-        const langMatch = activeLang === 'all' || card.classList.contains(activeLang);
-        const textMatch = card.textContent.toLowerCase().includes(searchTerm);
-        
-        card.style.display = (categoryMatch && langMatch && textMatch) ? 'block' : 'none';
-      });
-    }
-
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        filterContent();
-      });
-    });
-
-    langButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        langButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        filterContent();
-      });
-    });
-
-    searchInput.addEventListener('input', filterContent);
-
-    // Animazioni
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -175,7 +128,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.insight-card').forEach(card => {
+    document.querySelectorAll('.video-card, .knowledge-card, .article-card').forEach(card => {
       card.style.opacity = "0";
       card.style.transform = "translateY(20px)";
       card.style.transition = "all 0.6s ease-out";

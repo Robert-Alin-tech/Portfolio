@@ -1191,3 +1191,109 @@ body {
   text-align: center;
   border: 2px solid #D4AF37;
 }
+/* Insights Page Improvements */
+.insights-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+  padding: 20px;
+}
+
+.video-section {
+  margin-bottom: 40px;
+}
+
+.video-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  transition: all 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.knowledge-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 4px solid #D4AF37;
+}
+
+.resource-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resource-list li {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 8px;
+}
+
+.resource-list a {
+  color: #D4AF37;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+.author {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.article-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.cta-link {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .insights-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .insights-right {
+    order: -1;
+  }
+}
