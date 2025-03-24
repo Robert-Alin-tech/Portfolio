@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,134 +7,128 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Top Menu with Banner -->
-  <header class="top-menu">
-    <!-- ... (stesso header delle altre pagine) ... -->
+  <!-- Enhanced Header -->
+  <header class="top-menu glass-header">
+    <div class="menu-container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="The cognitive foundry of industrial innovation." class="active">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's engineer success together.">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-banner">
+      <div class="banner-content">
+        <h1 class="banner-title">Insights</h1>
+        <p class="banner-subtitle">Curated Knowledge Repository</p>
+      </div>
+    </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
-    <!-- ... (stesso social bar delle altre pagine) ... -->
+    <ul>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
+      <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
+      <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
+    </ul>
   </div>
 
   <!-- Main Content -->
-  <main class="main">
+  <main class="main insights-main">
+    <div class="content-disclaimer slide-in-down">
+      <p>🌟 <strong>Disclaimer:</strong> This section contains curated resources I find valuable for industrial innovation. Content is periodically updated as new developments emerge.</p>
+    </div>
+
+    <div class="language-toggle">
+      <button class="lang-btn active" data-lang="it">Italiano</button>
+      <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
     <div class="insights-container">
       <!-- Left Column: Video Section -->
-      <div class="insights-left slide-in-down">
-        <section class="video-section">
-          <h2>Featured Videos</h2>
+      <div class="insights-left">
+        <section class="video-section slide-in-right">
+          <h2 class="section-title"><span class="gold-underline">Featured</span> Videos</h2>
           
           <div class="video-card">
             <div class="video-wrapper">
               <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
             </div>
-            <h3>Industry 5.0: The Human-Centric Revolution</h3>
-            <p>Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing</p>
+            <div class="video-info">
+              <h3>Industry 5.0: The Human-Centric Revolution</h3>
+              <p class="video-desc">Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing</p>
+              <div class="video-meta">
+                <span class="duration">15:30</span>
+                <span class="category">Future Trends</span>
+              </div>
+            </div>
           </div>
 
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/OxIwIMgUJCE" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <h3>Industrial Automation Fundamentals</h3>
-            <p>Comprehensive guide to modern automation systems in manufacturing environments</p>
-          </div>
-
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/4QAz34Xjb04" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <h3>AI in Production Systems</h3>
-            <p>Webinar on practical AI implementations for quality control and predictive maintenance</p>
-          </div>
+          <!-- Altri video... -->
         </section>
       </div>
 
       <!-- Right Column: Resources -->
-      <div class="insights-right slide-in-right">
-        <section class="knowledge-section">
-          <h2>Essential Library</h2>
+      <div class="insights-right">
+        <section class="knowledge-section slide-in-left">
+          <h2 class="section-title"><span class="gold-underline">Recommended</span> Resources</h2>
           
           <div class="knowledge-card">
-            <h3>📚 Industrial Engineering</h3>
+            <div class="card-header">
+              <h3>📚 Essential Reading</h3>
+              <div class="card-actions">
+                <button class="filter-btn" data-category="books">Show All</button>
+              </div>
+            </div>
             <ul class="resource-list">
               <li>
                 <a href="https://www.amazon.com/Factory-Physics-Foundations-Management-Engineering/dp/1577667395" target="_blank">
                   Factory Physics: Foundations of Manufacturing Management
+                  <span class="author">Wallace J. Hopp</span>
                 </a>
-                <span class="author">by Wallace J. Hopp</span>
               </li>
-              <li>
-                <a href="https://www.amazon.com/Principles-Industrial-Engineering-Abhijit-Bhattacharya/dp/0367873180" target="_blank">
-                  Principles of Industrial Engineering
-                </a>
-                <span class="author">by Abhijit Bhattacharya</span>
-              </li>
+              <!-- Altri libri... -->
             </ul>
           </div>
 
           <div class="knowledge-card">
-            <h3>📈 Industrial Economics</h3>
-            <ul class="resource-list">
-              <li>
-                <a href="https://www.amazon.com/Industrial-Organization-Markets-Strategies-Paul/dp/1107687890" target="_blank">
-                  Industrial Organization: Markets and Strategies
-                </a>
-                <span class="author">by Paul Belleflamme</span>
-              </li>
-              <li>
-                <a href="https://www.amazon.com/Modern-Industrial-Organization-Theory-Practice/dp/1292159953" target="_blank">
-                  Modern Industrial Organization
-                </a>
-                <span class="author">by Dennis W. Carlton</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="article-section">
-          <h2>Featured Articles</h2>
-          <div class="article-card">
-            <h3>🇮🇹 Automazione Industriale in Italia</h3>
-            <p>Analisi dello stato dell'arte e prospettive future per le PMI italiane</p>
-            <a href="#" class="cta-link">Leggi l'articolo →</a>
-          </div>
-          
-          <div class="article-card">
-            <h3>🇬🇧 Sustainable Manufacturing Trends</h3>
-            <p>How AI is driving eco-friendly production practices</p>
-            <a href="#" class="cta-link">Read Article →</a>
+            <div class="card-header">
+              <h3>📰 Featured Articles</h3>
+              <div class="card-actions">
+                <button class="filter-btn" data-category="articles">Filter</button>
+              </div>
+            </div>
+            <div class="article-card">
+              <h4>Automazione Industriale: Trend 2024</h4>
+              <p>Analisi delle nuove frontiere dell'automazione nelle PMI italiane</p>
+              <a href="#" class="cta-link">Leggi articolo →</a>
+            </div>
           </div>
         </section>
       </div>
     </div>
+
+    <div class="dynamic-content-notice slide-in-up">
+      <p>🔄 This content is dynamically updated based on the latest industrial innovations and personal research findings.</p>
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <!-- ... (stesso footer delle altre pagine) ... -->
+  <!-- Enhanced Footer -->
+  <footer class="footer glass-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
   </footer>
 
-  <script>
-  // JavaScript per animazioni e interattività
-  document.addEventListener('DOMContentLoaded', function() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = "1";
-          entry.target.style.transform = "translateY(0)";
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.video-card, .knowledge-card, .article-card').forEach(card => {
-      card.style.opacity = "0";
-      card.style.transform = "translateY(20px)";
-      card.style.transition = "all 0.6s ease-out";
-      observer.observe(card);
-    });
-  });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

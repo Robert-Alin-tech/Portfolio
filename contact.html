@@ -1,94 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact - Portfolio of Robert A.T.</title>
+  <title>Contact - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Top Menu with Banner -->
-  <header class="top-menu">
+  <!-- Header -->
+  <header class="top-menu glass-header">
     <div class="menu-container">
       <nav class="menu">
         <ul>
-          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries." class="active">Contact</a></li>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-banner">
-      <div class="banner-left">
+      <div class="banner-content">
         <h1 class="banner-title">Contact</h1>
-      </div>
-      <div class="banner-right">
-        <p class="banner-desc">"Get in touch for collaborations, inquiries, or more information."</p>
+        <p class="banner-subtitle">Let's build industrial solutions together</p>
       </div>
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
-      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
       <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
       <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
       <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
     </ul>
   </div>
 
-  <!-- Main Content: Contact Form and Feedback Section -->
-  <main class="main">
-    <section class="content contact-form-section">
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message" required></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send</button>
-      </form>
-      
-      <!-- Feedback Section -->
-      <div class="contact-feedback">
-        <h3>If you've worked with me, please leave your valuable feedback:</h3>
-        <div class="feedback-stars">
-          <!-- Star rating using radio buttons and labels -->
-          <input type="radio" id="star5" name="rating" value="5">
-          <label for="star5" title="5 stars">&#9733;</label>
-          <input type="radio" id="star4" name="rating" value="4">
-          <label for="star4" title="4 stars">&#9733;</label>
-          <input type="radio" id="star3" name="rating" value="3">
-          <label for="star3" title="3 stars">&#9733;</label>
-          <input type="radio" id="star2" name="rating" value="2">
-          <label for="star2" title="2 stars">&#9733;</label>
-          <input type="radio" id="star1" name="rating" value="1">
-          <label for="star1" title="1 star">&#9733;</label>
-        </div>
-        <form id="contactFeedbackForm">
-          <div class="form-group">
-            <label for="feedback-comment">Feedback Comment</label>
-            <textarea id="feedback-comment" name="feedback-comment" placeholder="Leave your feedback here..."></textarea>
+  <!-- Main Content -->
+  <main class="main contact-main">
+    <div class="contact-container">
+      <!-- Left Column - Contact Details -->
+      <div class="contact-details slide-in-down">
+        <div class="detail-card">
+          <h3>Robert Alin Tapu</h3>
+          <div class="detail-item">
+            <i class="icon">📍</i>
+            <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
           </div>
-          <button type="submit" class="btn-submit">Submit Feedback</button>
+          <div class="detail-item">
+            <i class="icon">📧</i>
+            <p>ing.tapu93@gmail.com</p>
+          </div>
+          <div class="detail-item">
+            <i class="icon">📱</i>
+            <p>(+39) 320 218 5643<br>
+              <a href="https://wa.me/393202185643" class="whatsapp-link">Chat on WhatsApp</a>
+            </p>
+          </div>
+          <div class="detail-item">
+            <i class="icon">🌍</i>
+            <p>Romanian<br>Resident in Italy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Contact Form -->
+      <div class="contact-form slide-in-right">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="cta-button">Send Message</button>
         </form>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  <footer class="footer glass-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Robert A.T. | Industrial Solutions Architect</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
