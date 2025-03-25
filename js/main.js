@@ -1,21 +1,35 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Top menu banner animation
-  const topMenu = document.querySelector('.top-menu');
-  const headerBanner = document.querySelector('.header-banner');
-  const bannerTitle = document.querySelector('.banner-title');
-  const bannerDesc = document.querySelector('.banner-desc');
-  const menuLinks = document.querySelectorAll('.menu a');
+  // Gestione lingua
+  function updateContent(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+    });
+  }
 
-  // Banner hover logic
-  menuLinks.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      const title = link.getAttribute('data-banner-title') || "";
-      const desc = link.getAttribute('data-banner-desc') || "";
-      bannerTitle.textContent = title;
-      bannerDesc.textContent = `"${desc}"`;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelector('.lang-btn.active').classList.remove('active');
+      this.classList.add('active');
+      updateContent(this.dataset.lang);
     });
   });
 
+  // Animazioni
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.slide-in').forEach(el => observer.observe(el));
+  
+  // Header banner hover
+  const topMenu = document.querySelector('.top-menu');
+  const headerBanner = document.querySelector('.header-banner');
+  
   topMenu.addEventListener('mouseenter', () => {
     headerBanner.style.height = "33vh";
     headerBanner.style.padding = "20px 40px";
@@ -25,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.height = "0";
     headerBanner.style.padding = "0 40px";
   });
+});
 
   // Radar Chart Configuration
   const skills = {
