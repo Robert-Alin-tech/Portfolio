@@ -1,35 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Gestione lingua
-  function updateContent(lang) {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-    });
-  }
+  // Top menu banner animation
+  const topMenu = document.querySelector('.top-menu');
+  const headerBanner = document.querySelector('.header-banner');
+  const bannerTitle = document.querySelector('.banner-title');
+  const bannerDesc = document.querySelector('.banner-desc');
+  const menuLinks = document.querySelectorAll('.menu a');
 
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      document.querySelector('.lang-btn.active').classList.remove('active');
-      this.classList.add('active');
-      updateContent(this.dataset.lang);
+  // Banner hover logic
+  menuLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      const title = link.getAttribute('data-banner-title') || "";
+      const desc = link.getAttribute('data-banner-desc') || "";
+      bannerTitle.textContent = title;
+      bannerDesc.textContent = `"${desc}"`;
     });
   });
 
-  // Animazioni
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.slide-in').forEach(el => observer.observe(el));
-  
-  // Header banner hover
-  const topMenu = document.querySelector('.top-menu');
-  const headerBanner = document.querySelector('.header-banner');
-  
   topMenu.addEventListener('mouseenter', () => {
     headerBanner.style.height = "33vh";
     headerBanner.style.padding = "20px 40px";
@@ -39,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.height = "0";
     headerBanner.style.padding = "0 40px";
   });
-});
 
   // Radar Chart Configuration
   const skills = {
@@ -70,23 +55,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.querySelector('.pentagon-skill').setAttribute('points', points.join(' '));
 
-// In main.js, sostituisci le animazioni con:
-document.querySelectorAll('.slide-in, .fade-in').forEach(el => {
-  el.style.opacity = '0';
-});
+  // CV Section Animations
+  // Modifica l'Observer
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px"
+};
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+    if (entry.isIntersecting) {
+      if (entry.target.classList.contains('cv-section')) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateX(0)";
+      }
     }
   });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('[class*="slide"], [class*="fade"]').forEach(el => {
-  observer.observe(el);
-});
+}, observerOptions);
 
 // Applica l'Observer a tutte le sezioni
 document.querySelectorAll('.cv-section').forEach((section, index) => {
@@ -100,29 +85,4 @@ document.querySelectorAll('.cv-section').forEach((section, index) => {
     contactCard.style.opacity = "1";
     contactCard.style.transform = "translateY(0)";
   }
-});
-
-// Gestione toggle lingua
-document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    document.querySelector('.lang-btn.active').classList.remove('active');
-    this.classList.add('active');
-    const lang = this.dataset.lang;
-    // Aggiungi qui la logica per cambiare contenuti
-    // Gestione lingua
-document.querySelectorAll('.lang-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    // Rimuovi classe active da tutti i bottoni
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-    // Aggiungi classe active al bottone cliccato
-    this.classList.add('active');
-    
-    // Seleziona tutti gli elementi con attributo data-lang
-    const lang = this.dataset.lang;
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
-    });
-  });
-});
-  });
 });
