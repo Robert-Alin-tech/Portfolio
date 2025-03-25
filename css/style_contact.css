@@ -1,63 +1,201 @@
-/* Contact Page Specific Styles */
+/* CONTACT PAGE STYLES */
 .contact-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     gap: 40px;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
   }
-  .contact-details {
-    flex: 0 0 40%;
+  
+  .contact-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid rgba(212,175,55,0.2);
   }
-  .detail-card {
-    background: #1A2930;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+  
+  .map-container {
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
   .detail-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 1.5rem;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    background: rgba(212,175,55,0.03);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
   }
-  .detail-item .icon {
-    font-size: 1.5rem;
+  
+  .detail-item:hover {
+    transform: translateY(-3px);
   }
-  .contact-form {
-    flex: 1;
-    background: #f5f5f5;
-    padding: 20px;
+  
+  .detail-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background: rgba(212,175,55,0.1);
+    border-radius: 50%;
+  }
+  
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: #25D366;
+    color: white!important;
     border-radius: 8px;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
   }
-  .contact-form .form-group {
-    margin-bottom: 15px;
+  
+  /* Contact Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
-  .contact-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-  }
+  
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  .contact-form button {
-    padding: 12px 20px;
-    background: #D4AF37;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 12px 18px;
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 8px;
     font-size: 1rem;
-    transition: background 0.3s;
-  }
-  .contact-form button:hover {
-    background: #b38f2f;
-  }
-  .whatsapp-link {
-    color: #D4AF37;
-    text-decoration: none;
+    transition: all 0.3s ease;
   }
   
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.2);
+  }
+  
+  .cta-button {
+    background: linear-gradient(135deg, #D4AF37 0%, #B38F2F 100%);
+    color: #1A2930!important;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+  }
+  
+  /* Feedback Section */
+  .reviews-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.98);
+    border-radius: 15px;
+    border: 1px solid rgba(212,175,55,0.1);
+  }
+  
+  .feedback-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .gold-text {
+    color: #D4AF37;
+    font-weight: 600;
+  }
+  
+  .rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 1.5rem 0;
+  }
+  
+  .rating-stars label {
+    font-size: 2.2rem;
+    color: #e4e4e4;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .rating-stars input:checked ~ label,
+  .rating-stars label:hover,
+  .rating-stars label:hover ~ label {
+    color: #D4AF37;
+  }
+  
+  .privacy-options {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .privacy-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #D4AF37;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  input[type="checkbox"]:checked + .checkmark {
+    background: #D4AF37;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .privacy-note {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+    
+    .map-container {
+      height: 250px;
+    }
+    
+    .detail-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .cta-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }

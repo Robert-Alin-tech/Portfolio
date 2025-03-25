@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Separa gli stili specifici della pagina in un file dedicato se preferisci -->
   <link rel="stylesheet" href="css/style_contact.css">
 </head>
 <body>
-  <!-- Top Menu con Banner -->
+  <!-- Top Menu -->
   <header class="top-menu">
     <div class="menu-container">
       <nav class="menu">
@@ -25,7 +24,7 @@
     <div class="header-banner">
       <div class="banner-content">
         <h1 class="banner-title">Contact</h1>
-        <p class="banner-subtitle">Let's build industrial solutions together</p>
+        <p class="banner-subtitle">Let's Engineer Success Together</p>
       </div>
     </div>
   </header>
@@ -40,84 +39,151 @@
     </ul>
   </div>
 
-  <!-- Contenuto principale -->
+  <!-- Main Content -->
   <main class="main contact-main">
     <div class="contact-container">
-      <!-- Colonna Sinistra - Dettagli di Contatto -->
-      <div class="contact-details slide-in-down">
-        <div class="detail-card">
-          <h3>Robert Alin Tapu</h3>
-          <div class="detail-item">
-            <i class="icon">📍</i>
-            <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
+      <!-- Left Column -->
+      <div class="contact-info">
+        <div class="contact-card slide-in-down">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10351.08096629668!2d12.10184450864942!3d42.71897318858476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ecd06ba76106b%3A0x52122993d30fa840!2s05018%20Orvieto%20TR!5e1!3m2!1sit!2sit!4v1742940012131!5m2!1sit!2sit" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
-          <!-- Mappa incorporata -->
-          <div class="map-embed">
-            <iframe src="https://maps.app.goo.gl/jrn4xPYbBSK139ct9" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          <div class="detail-item">
-            <i class="icon">📧</i>
-            <p>ing.tapu93@gmail.com</p>
-          </div>
-          <div class="detail-item">
-            <i class="icon">📱</i>
-            <p>(+39) 320 218 5643<br>
-              <a href="https://wa.me/393202185643" class="whatsapp-link">Chat on WhatsApp</a>
-            </p>
-          </div>
-          <div class="detail-item">
-            <i class="icon">🌍</i>
-            <p>Romanian<br>Resident in Italy</p>
+          
+          <div class="contact-details">
+            <div class="detail-item">
+              <img src="images/icon-location.png" alt="Location" class="detail-icon">
+              <div>
+                <h3>Location</h3>
+                <p>05018 Orvieto, TR<br>Italy</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <img src="images/icon-email.png" alt="Email" class="detail-icon">
+              <div>
+                <h3>Email</h3>
+                <p>ing.tapu93@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="detail-item">
+              <img src="images/icon-phone.png" alt="Phone" class="detail-icon">
+              <div>
+                <h3>Direct Contact</h3>
+                <p>(+39) 320 218 5643</p>
+                <a href="https://wa.me/393202185643" class="whatsapp-btn">
+                  <img src="images/icon-whatsapp.png" alt="WhatsApp">
+                  Start Chat
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Colonna Destra - Form di Contatto e Rating -->
-      <div class="contact-form slide-in-right">
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
+      <!-- Right Column -->
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <section class="form-section slide-in-right">
+          <h2 class="section-title">Contact Form</h2>
+          <form class="contact-form" action="https://formspree.io/f/mvgkqqdo" method="POST">
+            <input type="hidden" name="_subject" value="New Message from Portfolio">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="_replyto" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+            </div>
+            <button type="submit" class="cta-button">
+              Send Message
+              <span class="arrow">→</span>
+            </button>
+          </form>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="reviews-section slide-in-right">
+          <div class="feedback-header">
+            <h2 class="section-title">Professional Feedback</h2>
+            <p class="feedback-info">
+              Your constructive feedback helps me grow. All submissions are confidential.
+              <span class="gold-text">Anonymous submissions welcome!</span>
+            </p>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-          </div>
-          <!-- Sezione rating con le stelline -->
-          <div class="form-group feedback-stars">
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5">&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">&#9733;</label>
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1">&#9733;</label>
-          </div>
-          <button type="submit" class="cta-button">Send Message</button>
-        </form>
+
+          <form class="feedback-form" action="https://formspree.io/f/YOUR_FEEDBACK_ID" method="POST">
+            <input type="hidden" name="_subject" value="Professional Feedback Received">
+            <div class="form-group">
+              <div class="rating-stars">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <textarea name="feedback" rows="4" 
+                placeholder="Share your honest feedback (what worked well, areas for improvement)..."
+                required></textarea>
+            </div>
+
+            <div class="privacy-options">
+              <label class="privacy-toggle">
+                <input type="checkbox" name="anonymous">
+                <span class="checkmark"></span>
+                <span class="privacy-label">Submit Anonymously</span>
+              </label>
+              <p class="privacy-note">
+                Uncheck if you're open to a follow-up discussion
+              </p>
+            </div>
+
+            <button type="submit" class="cta-button secondary">
+              Submit Feedback
+              <span class="arrow">→</span>
+            </button>
+          </form>
+        </section>
       </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="footer glass-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Robert A.T. | Industrial Solutions Architect</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <span>|</span>
-        <a href="terms.html">Terms of Use</a>
-      </div>
-    </div>
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. | Engineering the Future of Industry</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const forms = document.querySelectorAll('form');
+      
+      forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your submission! Your input is invaluable.');
+          form.reset();
+          setTimeout(() => {
+            window.location.href = 'contact.html?success=true';
+          }, 1500);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

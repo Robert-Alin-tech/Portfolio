@@ -6,9 +6,10 @@ CODICE INDEX:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Introduction - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_index.css">
 </head>
 <body>
-  <!-- Top Menu with Banner -->
+  <!-- Top Menu con Banner (Push Mode) -->
   <header class="top-menu">
     <div class="menu-container">
       <nav class="menu">
@@ -31,7 +32,7 @@ CODICE INDEX:
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
       <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
@@ -41,23 +42,19 @@ CODICE INDEX:
     </ul>
   </div>
 
-  <!-- Main Content: Interactive Introduction -->
+  <!-- Contenuto Principale -->
   <main class="main">
     <section class="hero-intro slide-in-down">
       <div class="hero-content">
         <h2>Industrial Evolution Engineer</h2>
         <p class="tagline">Merging 10+ years of technical experience with cutting-edge AI solutions</p>
-        
         <div class="intro-text">
-          <p>Specializing in <span class="highlight">process optimization</span> and <span class="highlight">smart manufacturing</span>, 
-          I bridge the gap between traditional industrial engineering and modern AI applications. My mission: 
-          Transform production ecosystems through data-driven innovation while maintaining human-centric design.</p>
+          <p>Specializing in <span class="highlight">process optimization</span> and <span class="highlight">smart manufacturing</span>, I bridge the gap between traditional industrial engineering and modern AI applications. My mission: Transform production ecosystems through data-driven innovation while maintaining human-centric design.</p>
         </div>
       </div>
     </section>
 
     <section class="interactive-grid">
-      <!-- Career Journey Card -->
       <div class="interactive-card slide-in-right" data-delay="0.2s">
         <div class="card-icon">⚙️</div>
         <h3>Technical Foundation</h3>
@@ -70,7 +67,6 @@ CODICE INDEX:
         <a href="about.html#technical-skills" class="card-cta">View Competencies →</a>
       </div>
 
-      <!-- AI Integration Card -->
       <div class="interactive-card slide-in-right" data-delay="0.4s">
         <div class="card-icon">🤖</div>
         <h3>AI Augmentation</h3>
@@ -83,7 +79,6 @@ CODICE INDEX:
         <a href="projects.html#ai-projects" class="card-cta">Explore Projects →</a>
       </div>
 
-      <!-- Philosophy Card -->
       <div class="interactive-card slide-in-right" data-delay="0.6s">
         <div class="card-icon">🎯</div>
         <h3>Engineering Philosophy</h3>
@@ -119,14 +114,17 @@ CODICE INDEX:
 
 
 
+
+
 CODICE ABOUT:
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About - Portfolio of Robert A.T.</title>
+  <title>About - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_about.css">
 </head>
 <body>
   <!-- Top Menu with Banner -->
@@ -134,11 +132,11 @@ CODICE ABOUT:
     <div class="menu-container">
       <nav class="menu">
         <ul>
-          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
+          <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
           <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise." class="active">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Curated knowledge and industry trends.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's shape the future of industry.">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -152,7 +150,7 @@ CODICE ABOUT:
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
       <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
@@ -165,109 +163,99 @@ CODICE ABOUT:
   <!-- Main Content: About Page -->
   <main class="main about-main">
     <section class="about-container">
-      <!-- Left Column -->
+      <!-- Left Column: Profile and Contact -->
       <div class="about-left">
         <div class="profile-name slide-in-down">
           <h2>Robert Alin Tapu</h2>
         </div>
-
-        <div class="profile-photo slide-in-down">
-          <img src="images/sidebar-bg.jpg" alt="Profile Photo">
-        </div>
-
-        <div class="contact-card slide-in-down">
-          <div class="contact-item">
-            <i class="icon">📅</i>
-            <div class="contact-info">
-              <label>Date of Birth</label>
-              <p>12/10/1993</p>
-            </div>
+        <div class="card slide-in-down">
+          <div class="profile-photo">
+            <img src="images/sidebar-bg.jpg" alt="Profile Photo">
           </div>
-          <div class="contact-item">
-            <i class="icon">🌍</i>
-            <div class="contact-info">
-              <label>Nationality</label>
-              <p>Romanian</p>
+          <div class="contact-card">
+            <div class="contact-item">
+              <i class="icon">📅</i>
+              <div class="contact-info">
+                <label>Date of Birth</label>
+                <p>12/10/1993</p>
+              </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <i class="icon">🏠</i>
-            <div class="contact-info">
-              <label>Address</label>
-              <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
+            <div class="contact-item">
+              <i class="icon">🌍</i>
+              <div class="contact-info">
+                <label>Nationality</label>
+                <p>Romanian</p>
+              </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <i class="icon">✉️</i>
-            <div class="contact-info">
-              <label>Email</label>
-              <p>ing.tapu93@gmail.com</p>
+            <div class="contact-item">
+              <i class="icon">🏠</i>
+              <div class="contact-info">
+                <label>Address</label>
+                <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
+              </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <i class="icon">📱</i>
-            <div class="contact-info">
-              <label>Phone</label>
-              <p>(+39) 3202185643</p>
+            <div class="contact-item">
+              <i class="icon">✉️</i>
+              <div class="contact-info">
+                <label>Email</label>
+                <p>ing.tapu93@gmail.com</p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="skills slide-in-down">
-          <h3>Technical Skills</h3>
-          <div class="tech-item">
-            <span class="tech-label">Process Optimization</span>
-            <div class="tech-bar">
-              <div class="tech-progress" style="width: 85%;"></div>
-            </div>
-          </div>
-          <div class="tech-item">
-            <span class="tech-label">Innovative Design</span>
-            <div class="tech-bar">
-              <div class="tech-progress" style="width: 80%;"></div>
-            </div>
-          </div>
-          <div class="tech-item">
-            <span class="tech-label">Prototyping</span>
-            <div class="tech-bar">
-              <div class="tech-progress" style="width: 75%;"></div>
-            </div>
-          </div>
-          <div class="tech-item">
-            <span class="tech-label">Project Management</span>
-            <div class="tech-bar">
-              <div class="tech-progress" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="tech-item">
-            <span class="tech-label">Digital Skills</span>
-            <div class="tech-bar">
-              <div class="tech-progress" style="width: 65%;"></div>
+            <div class="contact-item">
+              <i class="icon">📱</i>
+              <div class="contact-info">
+                <label>Phone</label>
+                <p>(+39) 3202185643</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="radar-chart slide-in-down">
-          <svg viewBox="0 0 100 100">
-            <polygon class="pentagon-base" points="50,10 90,35 75,80 25,80 10,35" />
-            <polygon class="pentagon-skill" points="" />
-          </svg>
+        <!-- Skills Section -->
+        <div class="card slide-in-down skills-section">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="radar-chart">
+            <svg viewBox="0 0 100 100">
+              <polygon class="pentagon-base" points="50,10 90,35 75,80 25,80 10,35" />
+              <polygon class="pentagon-skill" points="50,10 80,30 70,65 30,65 20,30" />
+            </svg>
+          </div>
+          <ul class="skills-bars">
+            <li>
+              <span class="skill-label">Process Optimization</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:85%;"></div></div>
+            </li>
+            <li>
+              <span class="skill-label">Innovative Design</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:80%;"></div></div>
+            </li>
+            <li>
+              <span class="skill-label">Prototyping</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:75%;"></div></div>
+            </li>
+            <li>
+              <span class="skill-label">Project Management</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:70%;"></div></div>
+            </li>
+            <li>
+              <span class="skill-label">Digital Skills</span>
+              <div class="skill-bar"><div class="skill-progress" style="width:65%;"></div></div>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <!-- Right Column -->
+      <!-- Right Column: Professional Info -->
       <div class="about-right">
-        <section class="cv-section">
-          <h2>Professional Profile</h2>
-          <p>Industrial Engineer with a dynamic, multidisciplinary approach and strong technical background. Passionate about process improvement and innovative design, with experience in international projects and digital transformation.</p>
-        </section>
-
-        <section class="cv-section">
-          <h2>Work Experience</h2>
+        <div class="card slide-in-down">
+          <h2 class="card-title">Professional Profile</h2>
+          <p class="card-content">Industrial Engineer with a dynamic, multidisciplinary approach and robust technical background. Passionate about process improvement and innovative design, with experience in international projects and digital transformation.</p>
+        </div>
+        <div class="card slide-in-down">
+          <h2 class="card-title">Work Experience</h2>
           <div class="experience-item">
             <h3>Business Process Consultant</h3>
             <div class="experience-meta">
-              <span class="company">SMP Consulting s.r.l.</span>
+              <span class="company"><a href="https://www.smpconsulting.com/" target="_blank">SMP Consulting s.r.l.</a></span>
               <span class="date">May 2023 - Present</span>
             </div>
             <ul class="experience-details">
@@ -276,22 +264,20 @@ CODICE ABOUT:
               <li>Conducted feasibility studies for industrial automation projects</li>
             </ul>
           </div>
-        </section>
-
-        <section class="cv-section">
-          <h2>Education</h2>
+        </div>
+        <div class="card slide-in-down">
+          <h2 class="card-title">Education</h2>
           <div class="education-item">
             <h3>BS in Industrial Engineering</h3>
             <div class="education-meta">
-              <span class="institution">Università degli Studi della Tuscia</span>
+              <span class="institution"><a href="https://www.unitus.it/corsi/corsi-di-laurea-triennale/ingegneria-industriale/" target="_blank">Università degli Studi della Tuscia</a></span>
               <span class="date">2018-2022</span>
             </div>
             <p>Erasmus program at Kielce University of Technology, Poland</p>
           </div>
-        </section>
-
-        <section class="cv-section">
-          <h2>Technical Expertise</h2>
+        </div>
+        <div class="card slide-in-down">
+          <h2 class="card-title">Technical Expertise</h2>
           <div class="skills-grid">
             <div class="skill-category">
               <h4>Engineering Software</h4>
@@ -310,7 +296,7 @@ CODICE ABOUT:
               </ul>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </section>
   </main>
@@ -328,6 +314,7 @@ CODICE ABOUT:
 
 
 
+
 CODICE PROJECTS:
 <!DOCTYPE html>
 <html lang="en">
@@ -336,6 +323,7 @@ CODICE PROJECTS:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_projects.css">
 </head>
 <body>
   <!-- Top Menu with Banner -->
@@ -361,7 +349,7 @@ CODICE PROJECTS:
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
       <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
@@ -374,7 +362,7 @@ CODICE PROJECTS:
   <!-- Main Content -->
   <main class="main">
     <div class="projects-container">
-      <!-- Left Column -->
+      <!-- Left Column: Innovation Board & Project Stats -->
       <div class="projects-left slide-in-down">
         <div class="innovation-board">
           <h3>Project Evolution Timeline</h3>
@@ -384,7 +372,7 @@ CODICE PROJECTS:
               <div class="timeline-content">
                 <h4>Smart Factory Initiative</h4>
                 <div class="progress-bar">
-                  <div class="progress" style="width: 80%"></div>
+                  <div class="progress" style="width: 80%;"></div>
                 </div>
               </div>
             </div>
@@ -393,7 +381,7 @@ CODICE PROJECTS:
               <div class="timeline-content">
                 <h4>AI Quality Control</h4>
                 <div class="progress-bar">
-                  <div class="progress" style="width: 45%"></div>
+                  <div class="progress" style="width: 45%;"></div>
                 </div>
               </div>
             </div>
@@ -413,7 +401,7 @@ CODICE PROJECTS:
         </div>
       </div>
 
-      <!-- Right Column -->
+      <!-- Right Column: Controls & Projects List -->
       <div class="projects-right">
         <div class="projects-controls slide-in-right">
           <div class="filter-select">
@@ -430,7 +418,7 @@ CODICE PROJECTS:
         </div>
 
         <div class="projects-list">
-          <!-- Engineering Project -->
+          <!-- Project Item 1 -->
           <div class="project-item engineering" data-status="completed">
             <div class="project-summary">
               <div class="project-meta">
@@ -460,7 +448,7 @@ CODICE PROJECTS:
             </div>
           </div>
 
-          <!-- AI Project -->
+          <!-- Project Item 2 -->
           <div class="project-item ai-integration" data-status="in-progress">
             <div class="project-summary">
               <div class="project-meta">
@@ -490,7 +478,7 @@ CODICE PROJECTS:
             </div>
           </div>
 
-          <!-- Design Project -->
+          <!-- Project Item 3 -->
           <div class="project-item process-design" data-status="planned">
             <div class="project-summary">
               <div class="project-meta">
@@ -555,7 +543,7 @@ CODICE PROJECTS:
       item.addEventListener('click', () => {
         const parent = item.closest('.project-item');
         parent.classList.toggle('active');
-        parent.querySelector('.expand-icon').textContent = 
+        parent.querySelector('.expand-icon').textContent =
           parent.classList.contains('active') ? '▲' : '▼';
       });
     });
@@ -563,6 +551,8 @@ CODICE PROJECTS:
   </script>
 </body>
 </html>
+
+
 
 
 
@@ -575,25 +565,28 @@ CODICE INSIGHTS:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Insights - Robert A.T. | Industrial Intelligence Hub</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_insights.css">
 </head>
 <body>
-  <!-- Enhanced Header -->
-  <header class="top-menu glass-header">
+  <!-- Header -->
+  <header class="top-menu">
     <div class="menu-container">
       <nav class="menu">
         <ul>
           <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
           <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="The cognitive foundry of industrial innovation." class="active">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's engineer success together.">Contact</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Curated knowledge and industry trends." class="active">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's shape the future of industry.">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-banner">
-      <div class="banner-content">
+      <div class="banner-left">
         <h1 class="banner-title">Insights</h1>
-        <p class="banner-subtitle">Curated Knowledge Repository</p>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Curated knowledge and industry trends."</p>
       </div>
     </div>
   </header>
@@ -608,52 +601,16 @@ CODICE INSIGHTS:
     </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Main Content: Insights Page -->
   <main class="main insights-main">
-    <div class="content-disclaimer slide-in-down">
-      <p>🌟 <strong>Disclaimer:</strong> This section contains curated resources I find valuable for industrial innovation. Content is periodically updated as new developments emerge.</p>
-    </div>
-
-    <div class="language-toggle">
-      <button class="lang-btn active" data-lang="it">Italiano</button>
-      <button class="lang-btn" data-lang="en">English</button>
-    </div>
-
-    <div class="insights-container">
-      <!-- Left Column: Video Section -->
+    <section class="insights-container">
+      <!-- Left Column: Recommended Resources (narrower) -->
       <div class="insights-left">
-        <section class="video-section slide-in-right">
-          <h2 class="section-title"><span class="gold-underline">Featured</span> Videos</h2>
-          
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-              <h3>Industry 5.0: The Human-Centric Revolution</h3>
-              <p class="video-desc">Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing</p>
-              <div class="video-meta">
-                <span class="duration">15:30</span>
-                <span class="category">Future Trends</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Altri video... -->
-        </section>
-      </div>
-
-      <!-- Right Column: Resources -->
-      <div class="insights-right">
-        <section class="knowledge-section slide-in-left">
-          <h2 class="section-title"><span class="gold-underline">Recommended</span> Resources</h2>
-          
+        <section class="knowledge-section slide-in-down">
+          <h2 class="section-title">Recommended Resources</h2>
           <div class="knowledge-card">
             <div class="card-header">
-              <h3>📚 Essential Reading</h3>
-              <div class="card-actions">
-                <button class="filter-btn" data-category="books">Show All</button>
-              </div>
+              <h3>Essential Reading</h3>
             </div>
             <ul class="resource-list">
               <li>
@@ -662,46 +619,94 @@ CODICE INSIGHTS:
                   <span class="author">Wallace J. Hopp</span>
                 </a>
               </li>
-              <!-- Altri libri... -->
+              <li>
+                <a href="https://www.example.com/resource2" target="_blank">
+                  Lean Manufacturing Essentials
+                  <span class="author">John Doe</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.example.com/resource3" target="_blank">
+                  Digital Transformation in Industry
+                  <span class="author">Jane Smith</span>
+                </a>
+              </li>
             </ul>
           </div>
-
           <div class="knowledge-card">
             <div class="card-header">
-              <h3>📰 Featured Articles</h3>
-              <div class="card-actions">
-                <button class="filter-btn" data-category="articles">Filter</button>
-              </div>
+              <h3>Featured Articles</h3>
             </div>
             <div class="article-card">
-              <h4>Automazione Industriale: Trend 2024</h4>
-              <p>Analisi delle nuove frontiere dell'automazione nelle PMI italiane</p>
-              <a href="#" class="cta-link">Leggi articolo →</a>
+              <h4>Industrial Automation Trends 2024</h4>
+              <p>An in-depth analysis of emerging technologies in industrial automation.</p>
+              <a href="#" class="cta-link">Read Article →</a>
             </div>
           </div>
         </section>
       </div>
-    </div>
 
-    <div class="dynamic-content-notice slide-in-up">
-      <p>🔄 This content is dynamically updated based on the latest industrial innovations and personal research findings.</p>
-    </div>
+      <!-- Right Column: Videos (wider) -->
+      <div class="insights-right">
+        <section class="video-section slide-in-up">
+          <h2 class="section-title">Featured Videos</h2>
+          <!-- Video Card 1 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Industry 5.0: The Human-Centric Revolution</h3>
+              <p class="video-desc">Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing.</p>
+              <div class="video-meta">
+                <span class="duration">15:30</span>
+                <span class="category">Future Trends</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 2 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Smart Manufacturing: Integration & Innovation</h3>
+              <p class="video-desc">A comprehensive overview of smart manufacturing and digital integration in modern factories.</p>
+              <div class="video-meta">
+                <span class="duration">12:45</span>
+                <span class="category">Innovation</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 3 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Data-Driven Decision Making</h3>
+              <p class="video-desc">How data analytics is revolutionizing decision-making in industrial settings.</p>
+              <div class="video-meta">
+                <span class="duration">10:20</span>
+                <span class="category">Analytics</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
   </main>
 
-  <!-- Enhanced Footer -->
-  <footer class="footer glass-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
 </html>
+
+
 
 
 
@@ -714,10 +719,12 @@ CODICE CONTACTS:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Separa gli stili specifici della pagina in un file dedicato se preferisci -->
+  <link rel="stylesheet" href="css/style_contact.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="top-menu glass-header">
+  <!-- Top Menu con Banner -->
+  <header class="top-menu">
     <div class="menu-container">
       <nav class="menu">
         <ul>
@@ -747,16 +754,20 @@ CODICE CONTACTS:
     </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Contenuto principale -->
   <main class="main contact-main">
     <div class="contact-container">
-      <!-- Left Column - Contact Details -->
+      <!-- Colonna Sinistra - Dettagli di Contatto -->
       <div class="contact-details slide-in-down">
         <div class="detail-card">
           <h3>Robert Alin Tapu</h3>
           <div class="detail-item">
             <i class="icon">📍</i>
             <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
+          </div>
+          <!-- Mappa incorporata -->
+          <div class="map-embed">
+            <iframe src="https://maps.app.goo.gl/jrn4xPYbBSK139ct9" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="detail-item">
             <i class="icon">📧</i>
@@ -775,7 +786,7 @@ CODICE CONTACTS:
         </div>
       </div>
 
-      <!-- Right Column - Contact Form -->
+      <!-- Colonna Destra - Form di Contatto e Rating -->
       <div class="contact-form slide-in-right">
         <form id="contactForm">
           <div class="form-group">
@@ -789,6 +800,19 @@ CODICE CONTACTS:
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <!-- Sezione rating con le stelline -->
+          <div class="form-group feedback-stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
           </div>
           <button type="submit" class="cta-button">Send Message</button>
         </form>
@@ -817,6 +841,7 @@ CODICE CONTACTS:
 
 
 
+
 CODICE JS/MAIN.JS:
 document.addEventListener("DOMContentLoaded", function() {
   // Top menu banner animation
@@ -825,6 +850,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const bannerTitle = document.querySelector('.banner-title');
   const bannerDesc = document.querySelector('.banner-desc');
   const menuLinks = document.querySelectorAll('.menu a');
+
+  // Menu Push Effect
+const topMenu = document.querySelector('.top-menu');
+const mainContent = document.querySelector('.main');
+
+topMenu.addEventListener('mouseenter', () => {
+  topMenu.classList.add('top-menu-expanded');
+  mainContent.style.marginTop = `${topMenu.offsetHeight}px`;
+});
+
+topMenu.addEventListener('mouseleave', () => {
+  topMenu.classList.remove('top-menu-expanded');
+  mainContent.style.marginTop = '100px';
+});
 
   // Banner hover logic
   menuLinks.forEach(link => {
