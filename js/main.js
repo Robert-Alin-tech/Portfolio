@@ -94,5 +94,20 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
     this.classList.add('active');
     const lang = this.dataset.lang;
     // Aggiungi qui la logica per cambiare contenuti
+    // Gestione lingua
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Rimuovi classe active da tutti i bottoni
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    // Aggiungi classe active al bottone cliccato
+    this.classList.add('active');
+    
+    // Seleziona tutti gli elementi con attributo data-lang
+    const lang = this.dataset.lang;
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+    });
+  });
+});
   });
 });
