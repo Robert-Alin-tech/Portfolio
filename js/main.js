@@ -86,3 +86,13 @@ document.querySelectorAll('.cv-section').forEach((section, index) => {
     contactCard.style.transform = "translateY(0)";
   }
 });
+
+// Gestione toggle lingua
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelector('.lang-btn.active').classList.remove('active');
+    this.classList.add('active');
+    const lang = this.dataset.lang;
+    // Aggiungi qui la logica per cambiare contenuti
+  });
+});
