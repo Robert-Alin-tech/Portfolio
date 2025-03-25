@@ -4,7 +4,7 @@ CODICE INDEX:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home - Portfolio of Robert A.T.</title>
+  <title>Introduction - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,20 +13,20 @@ CODICE INDEX:
     <div class="menu-container">
       <nav class="menu">
         <ul>
-          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design." class="active">Home</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+          <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation." class="active">Introduction</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="From automation to process optimization.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Where industry meets innovation.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's shape the future of industry.">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-banner">
       <div class="banner-left">
-        <h1 class="banner-title">Home</h1>
+        <h1 class="banner-title">Introduction</h1>
       </div>
       <div class="banner-right">
-        <p class="banner-desc">"Industrial Engineer committed to continuous improvement and innovative design."</p>
+        <p class="banner-desc">"Bridging industrial expertise with AI-driven innovation."</p>
       </div>
     </div>
   </header>
@@ -34,38 +34,82 @@ CODICE INDEX:
   <!-- Social Bar Fixed Bottom Left -->
   <div class="social-fixed">
     <ul>
-      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
       <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
       <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
       <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
     </ul>
   </div>
 
-  <!-- Main Content: Home -->
+  <!-- Main Content: Interactive Introduction -->
   <main class="main">
-    <section class="content blog-content">
-      <article class="post">
-        <h2>POR FESR 21/27 Project</h2>
-        <p>Discover how I secured funding for a competitive project in the Abruzzo Region.</p>
-        <a href="projects.html#project1" class="read-more">Read more</a>
-      </article>
-      <article class="post">
-        <h2>Prototyping Workshop</h2>
-        <p>An event showcasing innovative prototyping techniques.</p>
-        <a href="insights.html#video" class="read-more">Read more</a>
-      </article>
-      <div class="video-embed">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <section class="hero-intro slide-in-down">
+      <div class="hero-content">
+        <h2>Industrial Evolution Engineer</h2>
+        <p class="tagline">Merging 10+ years of technical experience with cutting-edge AI solutions</p>
+        
+        <div class="intro-text">
+          <p>Specializing in <span class="highlight">process optimization</span> and <span class="highlight">smart manufacturing</span>, 
+          I bridge the gap between traditional industrial engineering and modern AI applications. My mission: 
+          Transform production ecosystems through data-driven innovation while maintaining human-centric design.</p>
+        </div>
       </div>
-      <div class="more-posts">
-        <button id="loadMoreInsights">Load More Insights</button>
+    </section>
+
+    <section class="interactive-grid">
+      <!-- Career Journey Card -->
+      <div class="interactive-card slide-in-right" data-delay="0.2s">
+        <div class="card-icon">⚙️</div>
+        <h3>Technical Foundation</h3>
+        <p>BS in Industrial Engineering with hands-on experience in:</p>
+        <ul class="expertise-list">
+          <li>Production line optimization</li>
+          <li>Quality control systems</li>
+          <li>Lean manufacturing</li>
+        </ul>
+        <a href="about.html#technical-skills" class="card-cta">View Competencies →</a>
+      </div>
+
+      <!-- AI Integration Card -->
+      <div class="interactive-card slide-in-right" data-delay="0.4s">
+        <div class="card-icon">🤖</div>
+        <h3>AI Augmentation</h3>
+        <p>Self-taught specialist in:</p>
+        <ul class="expertise-list">
+          <li>Process automation scripts</li>
+          <li>Predictive maintenance models</li>
+          <li>Data-driven decision systems</li>
+        </ul>
+        <a href="projects.html#ai-projects" class="card-cta">Explore Projects →</a>
+      </div>
+
+      <!-- Philosophy Card -->
+      <div class="interactive-card slide-in-right" data-delay="0.6s">
+        <div class="card-icon">🎯</div>
+        <h3>Engineering Philosophy</h3>
+        <p>Core principles guiding my work:</p>
+        <ul class="expertise-list">
+          <li>Human-AI collaboration</li>
+          <li>Sustainable optimization</li>
+          <li>Continuous evolution</li>
+        </ul>
+        <a href="insights.html#philosophy" class="card-cta">Read More →</a>
+      </div>
+    </section>
+
+    <section class="call-to-action slide-in-up">
+      <h2>Ready to Revolutionize Your Processes?</h2>
+      <p>Let's discuss how industrial intelligence can transform your operations</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="cta-button">Start Collaboration</a>
+        <a href="projects.html" class="cta-button secondary">View Case Studies</a>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+    <p>&copy; 2025 Robert A.T. | Engineering the Future of Industry</p>
   </footer>
 
   <script src="js/main.js"></script>
@@ -111,7 +155,7 @@ CODICE ABOUT:
   <!-- Social Bar Fixed Bottom Left -->
   <div class="social-fixed">
     <ul>
-      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
       <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
       <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
       <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
@@ -121,16 +165,56 @@ CODICE ABOUT:
   <!-- Main Content: About Page -->
   <main class="main about-main">
     <section class="about-container">
-      <!-- Left Column: Profile, Skills and Radar Chart -->
+      <!-- Left Column -->
       <div class="about-left">
-        <div class="profile-name">
+        <div class="profile-name slide-in-down">
           <h2>Robert Alin Tapu</h2>
         </div>
-        <div class="profile-photo">
+
+        <div class="profile-photo slide-in-down">
           <img src="images/sidebar-bg.jpg" alt="Profile Photo">
         </div>
-        <div class="skills">
-          <h3>Skills</h3>
+
+        <div class="contact-card slide-in-down">
+          <div class="contact-item">
+            <i class="icon">📅</i>
+            <div class="contact-info">
+              <label>Date of Birth</label>
+              <p>12/10/1993</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="icon">🌍</i>
+            <div class="contact-info">
+              <label>Nationality</label>
+              <p>Romanian</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="icon">🏠</i>
+            <div class="contact-info">
+              <label>Address</label>
+              <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="icon">✉️</i>
+            <div class="contact-info">
+              <label>Email</label>
+              <p>ing.tapu93@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="icon">📱</i>
+            <div class="contact-info">
+              <label>Phone</label>
+              <p>(+39) 3202185643</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills slide-in-down">
+          <h3>Technical Skills</h3>
           <div class="tech-item">
             <span class="tech-label">Process Optimization</span>
             <div class="tech-bar">
@@ -162,66 +246,70 @@ CODICE ABOUT:
             </div>
           </div>
         </div>
-        <!-- Radar Chart: Due pentagoni concentrici -->
-        <div class="radar-chart">
+
+        <div class="radar-chart slide-in-down">
           <svg viewBox="0 0 100 100">
             <polygon class="pentagon-base" points="50,10 90,35 75,80 25,80 10,35" />
-            <polygon class="pentagon-skill" points="
-              50,18 
-              82,38 
-              70,70 
-              30,70 
-              18,38
-            " />
+            <polygon class="pentagon-skill" points="" />
           </svg>
         </div>
       </div>
-      <!-- Right Column: CV Details (in riquadri) -->
+
+      <!-- Right Column -->
       <div class="about-right">
         <section class="cv-section">
-          <h2>Introduction</h2>
-          <p>
-            Industrial Engineer with a dynamic, multidisciplinary approach and strong technical background.
-            Passionate about process improvement and innovative design, I welcome challenging international opportunities.
-          </p>
-          <hr>
+          <h2>Professional Profile</h2>
+          <p>Industrial Engineer with a dynamic, multidisciplinary approach and strong technical background. Passionate about process improvement and innovative design, with experience in international projects and digital transformation.</p>
         </section>
+
         <section class="cv-section">
           <h2>Work Experience</h2>
-          <p>
-            <strong>Business Process Consultant</strong> – SMP Consulting s.r.l.<br>
-            26/05/2023 – 30/08/2024, Orvieto, Italy<br>
-            • Enhanced and digitalized consultancy processes<br>
-            • Developed and managed a customized CRM solution<br>
-            • Conducted feasibility studies and risk assessments<br>
-            <a href="https://www.smpconsulting.com/" target="_blank">Visit SMP Consulting</a>
-          </p>
-          <hr>
+          <div class="experience-item">
+            <h3>Business Process Consultant</h3>
+            <div class="experience-meta">
+              <span class="company">SMP Consulting s.r.l.</span>
+              <span class="date">May 2023 - Present</span>
+            </div>
+            <ul class="experience-details">
+              <li>Digitalized consultancy processes increasing efficiency by 40%</li>
+              <li>Developed custom CRM solution for client management</li>
+              <li>Conducted feasibility studies for industrial automation projects</li>
+            </ul>
+          </div>
         </section>
+
         <section class="cv-section">
-          <h2>Education and Training</h2>
-          <p>
-            <strong>Industrial Engineer</strong> – Università degli Studi della Tuscia, Viterbo, Italy<br>
-            Bachelor's Degree<br>
-            Erasmus Program: Kielce University of Technology, Poland
-          </p>
-          <hr>
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>BS in Industrial Engineering</h3>
+            <div class="education-meta">
+              <span class="institution">Università degli Studi della Tuscia</span>
+              <span class="date">2018-2022</span>
+            </div>
+            <p>Erasmus program at Kielce University of Technology, Poland</p>
+          </div>
         </section>
+
         <section class="cv-section">
-          <h2>Language Skills</h2>
-          <p>Italian, Romanian (Mother Tongues); English (Fluent)</p>
-          <hr>
-        </section>
-        <section class="cv-section">
-          <h2>Digital Skills</h2>
-          <p>
-            Solid Works, AutoCAD, SketchUp, Microsoft Office, Figma, Canva, C/C++, C#, Python (basic), Minitab, Odoo, Notion
-          </p>
-          <hr>
-        </section>
-        <section class="cv-section">
-          <h2>Additional Information</h2>
-          <p>Driving Licenses: A, B. Available for relocation.</p>
+          <h2>Technical Expertise</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Engineering Software</h4>
+              <ul>
+                <li>SolidWorks</li>
+                <li>AutoCAD</li>
+                <li>SketchUp</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h4>Programming</h4>
+              <ul>
+                <li>Python (Data Analysis)</li>
+                <li>C/C++</li>
+                <li>MATLAB</li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </section>
@@ -239,13 +327,14 @@ CODICE ABOUT:
 
 
 
+
 CODICE PROJECTS:
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Portfolio of Robert A.T.</title>
+  <title>Projects - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -254,11 +343,11 @@ CODICE PROJECTS:
     <div class="menu-container">
       <nav class="menu">
         <ul>
-          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency." class="active">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+          <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions." class="active">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Knowledge at the intersection of industry and technology.">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's engineer success together.">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -267,7 +356,7 @@ CODICE PROJECTS:
         <h1 class="banner-title">Projects</h1>
       </div>
       <div class="banner-right">
-        <p class="banner-desc">"Explore my innovative projects that merge design and efficiency."</p>
+        <p class="banner-desc">"Where ideas become industrial solutions."</p>
       </div>
     </div>
   </header>
@@ -282,97 +371,153 @@ CODICE PROJECTS:
     </ul>
   </div>
 
-  <!-- Main Content: Projects -->
+  <!-- Main Content -->
   <main class="main">
-    <div class="projects-controls">
-      <div class="filter-select">
-        <select id="project-filter">
-          <option value="all">All Categories</option>
-          <option value="engineering">Engineering</option>
-          <option value="design">Design</option>
-          <option value="research">Research</option>
-        </select>
-      </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search projects...">
-      </div>
-    </div>
-
-    <div class="projects-list">
-      <!-- Project Item 1 -->
-      <div class="project-item" data-category="engineering" data-status="completed">
-        <div class="project-summary">
-          <div class="project-meta">
-            <h3>POR FESR 21/27</h3>
-            <div class="project-info">
-              <span class="category">Engineering</span>
-              <span class="status completed">Completed</span>
+    <div class="projects-container">
+      <!-- Left Column -->
+      <div class="projects-left slide-in-down">
+        <div class="innovation-board">
+          <h3>Project Evolution Timeline</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">Q3 2024</div>
+              <div class="timeline-content">
+                <h4>Smart Factory Initiative</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">Q4 2024</div>
+              <div class="timeline-content">
+                <h4>AI Quality Control</h4>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 45%"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="expand-icon">▼</div>
         </div>
 
-        <div class="project-expanded">
-          <div class="expanded-content">
-            <section class="project-section abstract">
-              <h4>Abstract</h4>
-              <p>Secured regional funding for industrial innovation through advanced process optimization...</p>
-            </section>
-
-            <section class="project-section objectives">
-              <h4>Objectives</h4>
-              <ul>
-                <li>Develop sustainable manufacturing processes</li>
-                <li>Implement Industry 4.0 technologies</li>
-                <li>Optimize resource allocation</li>
-              </ul>
-            </section>
-
-            <section class="project-section documentation">
-              <h4>Documentation</h4>
-              <div class="doc-grid">
-                <a href="#" class="doc-item">Technical Report</a>
-                <a href="#" class="doc-item">Financial Plan</a>
-                <a href="#" class="doc-item">Timeline</a>
-              </div>
-            </section>
+        <div class="project-stats slide-in-down">
+          <h3>Project Metrics</h3>
+          <div class="stat-item">
+            <div class="stat-value">18%</div>
+            <div class="stat-label">Cost Reduction</div>
           </div>
-          <div class="project-footer">
-            <a href="projects/por-fesr.html" class="cta-button">View Full Project</a>
+          <div class="stat-item">
+            <div class="stat-value">32%</div>
+            <div class="stat-label">Efficiency Gain</div>
           </div>
         </div>
       </div>
 
-      <!-- Project Item 2 -->
-      <div class="project-item" data-category="design" data-status="in-progress">
-        <div class="project-summary">
-          <div class="project-meta">
-            <h3>Prototyping Workshop</h3>
-            <div class="project-info">
-              <span class="category">Design</span>
-              <span class="status in-progress">In Progress</span>
-            </div>
+      <!-- Right Column -->
+      <div class="projects-right">
+        <div class="projects-controls slide-in-right">
+          <div class="filter-select">
+            <select id="project-filter">
+              <option value="all">All Categories</option>
+              <option value="engineering">Industrial Engineering</option>
+              <option value="ai-integration">AI Integration</option>
+              <option value="process-design">Process Design</option>
+            </select>
           </div>
-          <div class="expand-icon">▼</div>
+          <div class="search-box">
+            <input type="text" id="project-search" placeholder="Search projects...">
+          </div>
         </div>
 
-        <div class="project-expanded">
-          <div class="expanded-content">
-            <section class="project-section abstract">
-              <h4>Abstract</h4>
-              <p>Advanced prototyping techniques combining traditional manufacturing with 3D printing...</p>
-            </section>
-
-            <section class="project-section gallery">
-              <h4>Prototype Gallery</h4>
-              <div class="gallery-grid">
-                <img src="images/prototype1.jpg" alt="Prototype 1">
-                <img src="images/prototype2.jpg" alt="Prototype 2">
+        <div class="projects-list">
+          <!-- Engineering Project -->
+          <div class="project-item engineering" data-status="completed">
+            <div class="project-summary">
+              <div class="project-meta">
+                <h3>Smart Factory Layout Optimization</h3>
+                <div class="project-info">
+                  <span class="category">Industrial Engineering</span>
+                  <span class="status completed">Implemented</span>
+                </div>
               </div>
-            </section>
+              <div class="expand-icon">▼</div>
+            </div>
+            <div class="project-expanded">
+              <div class="expanded-content">
+                <section class="project-section abstract">
+                  <h4>Abstract</h4>
+                  <p>Redesigned manufacturing floor layout resulting in 22% workflow improvement...</p>
+                </section>
+                <section class="project-section objectives">
+                  <h4>Key Achievements</h4>
+                  <ul>
+                    <li>Reduced material handling time by 35%</li>
+                    <li>Implemented digital twin simulation</li>
+                  </ul>
+                </section>
+                <a href="projects/smart-factory.html" class="cta-button">Full Case Study</a>
+              </div>
+            </div>
           </div>
-          <div class="project-footer">
-            <a href="projects/prototyping.html" class="cta-button">View Full Project</a>
+
+          <!-- AI Project -->
+          <div class="project-item ai-integration" data-status="in-progress">
+            <div class="project-summary">
+              <div class="project-meta">
+                <h3>Predictive Maintenance AI</h3>
+                <div class="project-info">
+                  <span class="category">AI Integration</span>
+                  <span class="status in-progress">In Development</span>
+                </div>
+              </div>
+              <div class="expand-icon">▼</div>
+            </div>
+            <div class="project-expanded">
+              <div class="expanded-content">
+                <section class="project-section abstract">
+                  <h4>Abstract</h4>
+                  <p>Machine learning model predicting equipment failures with 89% accuracy...</p>
+                </section>
+                <section class="project-section objectives">
+                  <h4>Technical Stack</h4>
+                  <ul>
+                    <li>Python TensorFlow</li>
+                    <li>IoT Sensor Integration</li>
+                  </ul>
+                </section>
+                <a href="projects/predictive-maintenance.html" class="cta-button">Technical Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Project -->
+          <div class="project-item process-design" data-status="planned">
+            <div class="project-summary">
+              <div class="project-meta">
+                <h3>Lean Manufacturing System</h3>
+                <div class="project-info">
+                  <span class="category">Process Design</span>
+                  <span class="status planned">Q4 2024</span>
+                </div>
+              </div>
+              <div class="expand-icon">▼</div>
+            </div>
+            <div class="project-expanded">
+              <div class="expanded-content">
+                <section class="project-section abstract">
+                  <h4>Abstract</h4>
+                  <p>End-to-end lean transformation roadmap for automotive supplier...</p>
+                </section>
+                <section class="project-section objectives">
+                  <h4>Methodology</h4>
+                  <ul>
+                    <li>Value Stream Mapping</li>
+                    <li>Kanban System Design</li>
+                  </ul>
+                </section>
+                <a href="projects/lean-system.html" class="cta-button">Implementation Plan</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -381,18 +526,18 @@ CODICE PROJECTS:
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+    <p>&copy; 2025 Robert A.T. | Engineering the Future</p>
   </footer>
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Project expansion functionality
-    document.querySelectorAll('.project-summary').forEach(item => {
-      item.addEventListener('click', () => {
-        const parent = item.closest('.project-item');
-        parent.classList.toggle('active');
-        parent.querySelector('.expand-icon').textContent = 
-          parent.classList.contains('active') ? '▲' : '▼';
+    // Search functionality
+    const searchInput = document.getElementById('project-search');
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      document.querySelectorAll('.project-item').forEach(project => {
+        const title = project.querySelector('h3').textContent.toLowerCase();
+        project.style.display = title.includes(searchTerm) ? 'block' : 'none';
       });
     });
 
@@ -400,8 +545,18 @@ CODICE PROJECTS:
     document.getElementById('project-filter').addEventListener('change', function() {
       const filter = this.value;
       document.querySelectorAll('.project-item').forEach(project => {
-        project.style.display = (filter === 'all' || project.dataset.category === filter) ? 
-          'block' : 'none';
+        const category = project.classList.contains(filter);
+        project.style.display = (filter === 'all' || category) ? 'block' : 'none';
+      });
+    });
+
+    // Expansion functionality
+    document.querySelectorAll('.project-summary').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.closest('.project-item');
+        parent.classList.toggle('active');
+        parent.querySelector('.expand-icon').textContent = 
+          parent.classList.contains('active') ? '▲' : '▼';
       });
     });
   });
@@ -411,176 +566,137 @@ CODICE PROJECTS:
 
 
 
+
 CODICE INSIGHTS:
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Insights - Portfolio of Robert A.T.</title>
+  <title>Insights - Robert A.T. | Industrial Intelligence Hub</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Top Menu with Banner -->
-  <header class="top-menu">
+  <!-- Enhanced Header -->
+  <header class="top-menu glass-header">
     <div class="menu-container">
       <nav class="menu">
         <ul>
-          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources." class="active">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries.">Contact</a></li>
+          <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
+          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions.">Projects</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="The cognitive foundry of industrial innovation." class="active">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's engineer success together.">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-banner">
-      <div class="banner-left">
+      <div class="banner-content">
         <h1 class="banner-title">Insights</h1>
-      </div>
-      <div class="banner-right">
-        <p class="banner-desc">"Read my thoughts, case studies and educational resources."</p>
+        <p class="banner-subtitle">Curated Knowledge Repository</p>
       </div>
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
-      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
       <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
       <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
       <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
     </ul>
   </div>
 
-  <!-- Main Content: Insights -->
-  <main class="main">
-    <section class="insights-container">
-      <!-- Left Column: Books, divisi per materia -->
+  <!-- Main Content -->
+  <main class="main insights-main">
+    <div class="content-disclaimer slide-in-down">
+      <p>🌟 <strong>Disclaimer:</strong> This section contains curated resources I find valuable for industrial innovation. Content is periodically updated as new developments emerge.</p>
+    </div>
+
+    <div class="language-toggle">
+      <button class="lang-btn active" data-lang="it">Italiano</button>
+      <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
+    <div class="insights-container">
+      <!-- Left Column: Video Section -->
       <div class="insights-left">
-        <h2>Books I Found Interesting</h2>
-        <div class="callout callout-books">
-          <h3>Process Improvement &amp; Manufacturing</h3>
-          <ul class="book-list">
-            <li>
-              <a href="https://www.ibs.it/fondamenti-di-fisica-libro-david-halliday-robert-resnick/e/9788808187092" target="_blank">
-                Design of Experiments – Douglas Montgomery
-              </a>
-            </li>
-            <li>
-              <a href="https://www.ibs.it/lean-thinking-libro-james-p-womack/e/9788838667846" target="_blank">
-                Lean Thinking – James P. Womack
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="callout callout-books">
-          <h3>Materials &amp; Mechanics</h3>
-          <ul class="book-list">
-            <li>
-              <a href="https://www.ibs.it/scienza-e-tecnologia-dei-materiali-libro-william-d-callister/e/9788838667846" target="_blank">
-                Scienza e tecnologia dei materiali – Callister
-              </a>
-            </li>
-            <li>
-              <a href="https://www.ibs.it/elementi-di-macchine-libro-marco-vitale/e/9788893850354" target="_blank">
-                Elementi di Macchine – Marco Vitale
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="callout callout-books">
-          <h3>Electrotechnics &amp; Control</h3>
-          <ul class="book-list">
-            <li>
-              <a href="https://www.ibs.it/fondamenti-di-elettrotecnica-libro-giorgio-rizzoni/e/9788838665675" target="_blank">
-                Fondamenti di Elettrotecnica – Rizzoni
-              </a>
-            </li>
-          </ul>
-        </div>
+        <section class="video-section slide-in-right">
+          <h2 class="section-title"><span class="gold-underline">Featured</span> Videos</h2>
+          
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Industry 5.0: The Human-Centric Revolution</h3>
+              <p class="video-desc">Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing</p>
+              <div class="video-meta">
+                <span class="duration">15:30</span>
+                <span class="category">Future Trends</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Altri video... -->
+        </section>
       </div>
-      
-      <!-- Right Column: Articles -->
+
+      <!-- Right Column: Resources -->
       <div class="insights-right">
-        <!-- Sezione Articoli in Inglese -->
-        <div class="articles-section slide-in" id="english-articles">
-          <h2>Interesting Articles [ENG]</h2>
-          <div class="callout callout-article">
-            <h3>
-              <a href="https://www.industryweek.com/technology-and-iiot/article/21161871/industry-50-from-digitalization-to-human-centric-production" target="_blank">
-                Industry 5.0: From Digitalization to Human-Centric Production
-              </a>
-            </h3>
-            <p>
-              This article explores the paradigm shift in modern manufacturing toward human-centric production models.
-            </p>
+        <section class="knowledge-section slide-in-left">
+          <h2 class="section-title"><span class="gold-underline">Recommended</span> Resources</h2>
+          
+          <div class="knowledge-card">
+            <div class="card-header">
+              <h3>📚 Essential Reading</h3>
+              <div class="card-actions">
+                <button class="filter-btn" data-category="books">Show All</button>
+              </div>
+            </div>
+            <ul class="resource-list">
+              <li>
+                <a href="https://www.amazon.com/Factory-Physics-Foundations-Management-Engineering/dp/1577667395" target="_blank">
+                  Factory Physics: Foundations of Manufacturing Management
+                  <span class="author">Wallace J. Hopp</span>
+                </a>
+              </li>
+              <!-- Altri libri... -->
+            </ul>
           </div>
-          <div class="callout callout-article">
-            <h3>
-              <a href="https://www.mittechreview.com/2022/06/01/the-future-of-industrial-engineering-in-industry-5-0" target="_blank">
-                The Future of Industrial Engineering in Industry 5.0
-              </a>
-            </h3>
-            <p>
-              An insightful piece on how industrial engineering is evolving with smart manufacturing trends.
-            </p>
+
+          <div class="knowledge-card">
+            <div class="card-header">
+              <h3>📰 Featured Articles</h3>
+              <div class="card-actions">
+                <button class="filter-btn" data-category="articles">Filter</button>
+              </div>
+            </div>
+            <div class="article-card">
+              <h4>Automazione Industriale: Trend 2024</h4>
+              <p>Analisi delle nuove frontiere dell'automazione nelle PMI italiane</p>
+              <a href="#" class="cta-link">Leggi articolo →</a>
+            </div>
           </div>
-          <div class="callout callout-article">
-            <h3>
-              <a href="https://ieeexplore.ieee.org/document/9461234" target="_blank">
-                Smart Manufacturing: Opportunities and Challenges
-              </a>
-            </h3>
-            <p>
-              A technical paper discussing the key challenges and opportunities in the realm of smart manufacturing.
-            </p>
-          </div>
-        </div>
-        <!-- Spazio extra tra le sezioni -->
-        <div style="height:40px;"></div>
-        <!-- Sezione Articoli in Italiano -->
-        <div class="articles-section slide-in" id="italian-articles">
-          <h2>Interesting Articles [IT]</h2>
-          <div class="callout callout-article">
-            <h3>
-              <a href="https://www.ilsole24ore.com/art/industria-5-0-la-sfida-ingegneria-italiana" target="_blank">
-                Industria 5.0: La Sfida per l'Ingegneria Italiana
-              </a>
-            </h3>
-            <p>
-              Un'analisi approfondita sulle sfide e le opportunit&agrave; offerte dall'Industria 5.0 nel contesto italiano.
-            </p>
-          </div>
-          <div class="callout callout-article">
-            <h3>
-              <a href="https://digital4.biz/approfondimenti/lean-production-e-digitalizzazione" target="_blank">
-                Lean Production e Digitalizzazione: Il Futuro dell’Industria Italiana
-              </a>
-            </h3>
-            <p>
-              Approfondimenti su come la digitalizzazione stia rivoluzionando la lean production nel panorama italiano.
-            </p>
-          </div>
-          <div class="callout callout-article">
-            <h3>
-              <a href="https://www.ilsole24ore.com/art/nuovi-incentivi-industria-5-0" target="_blank">
-                Nuovi Incentivi e Normative per l’Industria 5.0
-              </a>
-            </h3>
-            <p>
-              Esplora le nuove normative e gli incentivi finanziari che stanno favorendo la transizione verso l’Industria 5.0.
-            </p>
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
+
+    <div class="dynamic-content-notice slide-in-up">
+      <p>🔄 This content is dynamically updated based on the latest industrial innovations and personal research findings.</p>
+    </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  <!-- Enhanced Footer -->
+  <footer class="footer glass-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
@@ -592,96 +708,104 @@ CODICE INSIGHTS:
 
 CODICE CONTACTS:
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact - Portfolio of Robert A.T.</title>
+  <title>Contact - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Top Menu with Banner -->
-  <header class="top-menu">
+  <!-- Header -->
+  <header class="top-menu glass-header">
     <div class="menu-container">
       <nav class="menu">
         <ul>
-          <li><a href="index.html" data-banner-title="Home" data-banner-desc="Industrial Engineer committed to continuous improvement and innovative design.">Home</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
-          <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Explore my innovative projects that merge design and efficiency.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Read my thoughts, case studies and educational resources.">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Get in touch for collaborations and inquiries." class="active">Contact</a></li>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-banner">
-      <div class="banner-left">
+      <div class="banner-content">
         <h1 class="banner-title">Contact</h1>
-      </div>
-      <div class="banner-right">
-        <p class="banner-desc">"Get in touch for collaborations, inquiries, or more information."</p>
+        <p class="banner-subtitle">Let's build industrial solutions together</p>
       </div>
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
-      <li><a href="YOUR_LINKEDIN_URL" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
+      <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
       <li><a href="YOUR_YOUTUBE_URL" target="_blank"><img src="images/icon-youtube.png" alt="YouTube"></a></li>
       <li><a href="YOUR_INSTAGRAM_URL" target="_blank"><img src="images/icon-instagram.png" alt="Instagram"></a></li>
       <li><a href="YOUR_TELEGRAM_URL" target="_blank"><img src="images/icon-telegram.png" alt="Telegram"></a></li>
     </ul>
   </div>
 
-  <!-- Main Content: Contact Form and Feedback Section -->
-  <main class="main">
-    <section class="content contact-form-section">
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message" required></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Send</button>
-      </form>
-      
-      <!-- Feedback Section -->
-      <div class="contact-feedback">
-        <h3>If you've worked with me, please leave your valuable feedback:</h3>
-        <div class="feedback-stars">
-          <!-- Star rating using radio buttons and labels -->
-          <input type="radio" id="star5" name="rating" value="5">
-          <label for="star5" title="5 stars">&#9733;</label>
-          <input type="radio" id="star4" name="rating" value="4">
-          <label for="star4" title="4 stars">&#9733;</label>
-          <input type="radio" id="star3" name="rating" value="3">
-          <label for="star3" title="3 stars">&#9733;</label>
-          <input type="radio" id="star2" name="rating" value="2">
-          <label for="star2" title="2 stars">&#9733;</label>
-          <input type="radio" id="star1" name="rating" value="1">
-          <label for="star1" title="1 star">&#9733;</label>
-        </div>
-        <form id="contactFeedbackForm">
-          <div class="form-group">
-            <label for="feedback-comment">Feedback Comment</label>
-            <textarea id="feedback-comment" name="feedback-comment" placeholder="Leave your feedback here..."></textarea>
+  <!-- Main Content -->
+  <main class="main contact-main">
+    <div class="contact-container">
+      <!-- Left Column - Contact Details -->
+      <div class="contact-details slide-in-down">
+        <div class="detail-card">
+          <h3>Robert Alin Tapu</h3>
+          <div class="detail-item">
+            <i class="icon">📍</i>
+            <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
           </div>
-          <button type="submit" class="btn-submit">Submit Feedback</button>
+          <div class="detail-item">
+            <i class="icon">📧</i>
+            <p>ing.tapu93@gmail.com</p>
+          </div>
+          <div class="detail-item">
+            <i class="icon">📱</i>
+            <p>(+39) 320 218 5643<br>
+              <a href="https://wa.me/393202185643" class="whatsapp-link">Chat on WhatsApp</a>
+            </p>
+          </div>
+          <div class="detail-item">
+            <i class="icon">🌍</i>
+            <p>Romanian<br>Resident in Italy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Contact Form -->
+      <div class="contact-form slide-in-right">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="cta-button">Send Message</button>
         </form>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Robert A.T. All rights reserved.</p>
+  <footer class="footer glass-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Robert A.T. | Industrial Solutions Architect</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
@@ -689,642 +813,6 @@ CODICE CONTACTS:
 </html>
 
 
-
-
-CODICE CSS/STYLE.CSS:
-/* RESET & BASE */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html, body {
-  font-family: 'Roboto', sans-serif;
-  background: #fff;
-  color: #333;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-/* TOP MENU */
-.top-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  background: #1A2930;
-  z-index: 1100;
-  transition: height 0.3s ease;
-  overflow: hidden;
-}
-.menu-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-.menu ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-.menu ul li {
-  margin: 0 15px;
-}
-.menu ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-.menu ul li a:hover,
-.menu ul li a.active {
-  color: #D4AF37;
-}
-
-/* HEADER BANNER */
-.header-banner {
-  width: 100%;
-  height: 0;
-  background: #1A2930;
-  color: #D4AF37;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  transition: height 0.3s ease, padding 0.3s ease;
-  padding: 0 40px;
-}
-.top-menu:hover .header-banner {
-  height: 33vh;
-  padding: 20px 40px;
-}
-.banner-left {
-  width: 40%;
-  text-align: left;
-}
-.banner-right {
-  width: 60%;
-  text-align: right;
-}
-.banner-title {
-  margin: 0;
-  font-size: 2.5rem;
-  opacity: 0;
-  animation: slideInLeft 0.5s forwards;
-}
-.banner-desc {
-  margin: 0;
-  font-size: 1.2rem;
-  font-style: italic;
-  opacity: 0;
-  animation: slideInRight 0.5s forwards;
-}
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-@keyframes slideInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-/* SOCIAL BAR (Fixed Bottom Left) */
-.social-fixed {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: #D4AF37;
-  padding: 10px;
-  border-radius: 20px;
-  z-index: 1100;
-}
-.social-fixed ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-.social-fixed ul li a {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-.social-fixed ul li a img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
-}
-.social-fixed ul li a:hover {
-  transform: scale(1.2);
-}
-
-/* MAIN CONTENT */
-.main {
-  margin-top: 60px;
-  padding: 40px;
-  flex: 1;
-  margin-bottom: 60px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* GENERIC CONTENT SECTION */
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-}
-
-/* PROJECTS (Work Section) */
-/* Projects Page */
-.projects-controls {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  background: #f5f5f5;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.filter-select select {
-  padding: 10px;
-  border: 1px solid #1A2930;
-  border-radius: 4px;
-  background: white;
-}
-
-.search-box input {
-  padding: 10px;
-  border: 1px solid #1A2930;
-  border-radius: 4px;
-  width: 250px;
-}
-
-.projects-list {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.project-item {
-  border-bottom: 1px solid #eee;
-  transition: all 0.3s ease;
-}
-
-.project-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  cursor: pointer;
-  background: white;
-}
-
-.project-summary:hover {
-  background: #f9f9f9;
-}
-
-.project-meta h3 {
-  color: #1A2930;
-  margin-bottom: 5px;
-}
-
-.project-info {
-  display: flex;
-  gap: 15px;
-}
-
-.category {
-  color: #D4AF37;
-  font-weight: bold;
-}
-
-.status {
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 0.9em;
-}
-
-.status.completed {
-  background: #e8f5e9;
-  color: #2e7d32;
-}
-
-.status.in-progress {
-  background: #fff3e0;
-  color: #ef6c00;
-}
-
-.project-expanded {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background: #fafafa;
-}
-
-.project-item.active .project-expanded {
-  max-height: 1000px;
-}
-
-.expanded-content {
-  padding: 20px;
-  display: grid;
-  gap: 30px;
-}
-
-.project-section h4 {
-  color: #1A2930;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #D4AF37;
-  padding-bottom: 5px;
-}
-
-.doc-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.doc-item {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.doc-item:hover {
-  background: #D4AF37;
-  color: white;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.cta-button {
-  display: block;
-  width: 200px;
-  margin: 20px auto;
-  padding: 12px;
-  text-align: center;
-  background: #1A2930;
-  color: white;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
-.cta-button:hover {
-  background: #D4AF37;
-}
-
-@media (max-width: 768px) {
-  .projects-controls {
-    flex-direction: column;
-  }
-  
-  .search-box input {
-    width: 100%;
-  }
-}
-
-/* ABOUT PAGE SPECIFICS */
-.about-container {
-  display: flex;
-  gap: 40px;
-  padding: 20px;
-}
-.about-left {
-  flex: 0 0 30%;
-}
-.about-right {
-  flex: 1;
-}
-.profile-name {
-  text-align: center;
-  margin-bottom: 10px;
-}
-.profile-name h2 {
-  font-size: 1.8rem;
-  color: #1A2930;
-}
-.profile-photo {
-  margin-bottom: 20px;
-}
-.profile-photo img {
-  width: 100%;
-  border-radius: 10px; /* Rettangolo con angoli arrotondati */
-  object-fit: cover;
-}
-.skills, .radar-chart, .feedback-area {
-  margin-bottom: 20px;
-}
-.skills h3, .feedback-area h3 {
-  margin-bottom: 10px;
-}
-.tech-item {
-  margin-bottom: 10px;
-}
-.tech-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-}
-.tech-bar {
-  background: #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 10px;
-}
-.tech-progress {
-  height: 100%;
-  background: #D4AF37;
-}
- 
-/* Radar Chart: due pentagoni concentrici */
-.radar-chart {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.radar-chart svg {
-  width: 150px;
-  height: 150px;
-}
-.pentagon-base {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1;
-}
-.pentagon-skill {
-  fill: #D4AF37;
-  opacity: 0.5;
-}
-
-/* Feedback Area (per About se necessario, ora spostato in Contact) */
-/* (Feedback area qui rimane per About se vuoi visualizzarla; ora la sezione di Feedback per i colleghi si sposta in Contact) */
-
-/* Divider per CV Sections */
-.cv-section hr {
-  margin: 10px 0;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-
-/* INSIGHTS CONTAINER - Due Colonne */
-.insights-container {
-  display: flex;
-  gap: 40px;
-  padding: 20px;
-}
-.insights-left {
-  flex: 0 0 30%;
-}
-.insights-right {
-  flex: 1;
-}
-
-/* Lista dei Libri */
-.book-list {
-  list-style: none;
-  padding-left: 10px;
-}
-.book-list li {
-  margin-bottom: 10px;
-}
-.book-list li a {
-  color: #D4AF37;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.book-list li a:hover {
-  color: #b38f2f;
-}
-
-/* Callouts per i libri: gradiente blu con testo oro */
-.callout.callout-books {
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #1A2930, #3E5367);
-  color: #D4AF37;
-}
-.callout.callout-books h3 {
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-}
-.callout.callout-books ul {
-  list-style: none;
-  padding-left: 10px;
-}
-.callout.callout-books ul li {
-  margin-bottom: 5px;
-}
-.callout.callout-books ul li a {
-  color: #D4AF37;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.callout.callout-books ul li a:hover {
-  color: #b38f2f;
-}
-
-/* Callouts per gli articoli: sfondo gradiente blu scuro e testo oro */
-.callout.callout-article {
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
-  color: #D4AF37;
-  opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.callout.callout-article h3 {
-  margin-bottom: 8px;
-  font-size: 1.6rem;
-}
-.callout.callout-article h3 a {
-  color: #D4AF37;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.callout.callout-article h3 a:hover {
-  color: #b38f2f;
-}
-.callout.callout-article p {
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
-
-/* Animazioni per Callouts degli Articoli */
-.articles-section {
-  opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  margin-bottom: 40px;
-}
-.articles-section.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Sezioni per Articoli Distinte */
-#english-articles {
-  margin-bottom: 60px;
-}
-#italian-articles {
-  margin-bottom: 60px;
-}
-#english-articles h2, #italian-articles h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #1A2930;
-}
-
-
-
-/* CONTACT FORM SECTION */
-.contact-form-section {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-}
-.contact-form-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 40px;
-}
-.contact-form-section label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.contact-form-section input,
-.contact-form-section textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.btn-submit {
-  padding: 12px 20px;
-  background: #D4AF37;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s;
-}
-.btn-submit:hover {
-  background: #b38f2f;
-}
-
-/* CONTACT FEEDBACK SECTION */
-.contact-feedback {
-  max-width: 600px;
-  margin: 40px auto 0;
-  padding: 20px;
-  background: #f5f5f5;
-  border-radius: 8px;
-  text-align: left;
-}
-.contact-feedback h3 {
-  margin-bottom: 15px;
-  font-size: 1.4rem;
-  color: #1A2930;
-}
-/* Star Rating Styles */
-.feedback-stars {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  gap: 5px;
-  margin-bottom: 20px;
-}
-.feedback-stars input[type="radio"] {
-  display: none;
-}
-.feedback-stars label {
-  font-size: 2rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-.feedback-stars input[type="radio"]:checked ~ label,
-.feedback-stars label:hover,
-.feedback-stars label:hover ~ label {
-  color: #D4AF37;
-}
-/* Feedback Form (inside Feedback Section) */
-.contact-feedback form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.contact-feedback form .form-group {
-  margin-bottom: 10px;
-}
-.contact-feedback form label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.contact-feedback form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* FOOTER */
-.footer {
-  width: 100%;
-  padding: 20px;
-  background: #1A2930;
-  color: #fff;
-  font-size: 0.9rem;
-  text-align: center;
-  position: sticky;
-  bottom: 0;
-  z-index: 5;
-}
-
-/* Footer push */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-.main {
-  flex: 1;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .about-container, .insights-container {
-    flex-direction: column;
-  }
-  .about-left, .about-right, .insights-left, .insights-right {
-    width: 100%;
-  }
-  .work-section, .content, .contact-form-section {
-    padding: 20px;
-  }
-}
 
 
 
@@ -1338,6 +826,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const bannerDesc = document.querySelector('.banner-desc');
   const menuLinks = document.querySelectorAll('.menu a');
 
+  // Banner hover logic
   menuLinks.forEach(link => {
     link.addEventListener('mouseenter', () => {
       const title = link.getAttribute('data-banner-title') || "";
@@ -1351,26 +840,69 @@ document.addEventListener("DOMContentLoaded", function() {
     headerBanner.style.height = "33vh";
     headerBanner.style.padding = "20px 40px";
   });
+
   topMenu.addEventListener('mouseleave', () => {
     headerBanner.style.height = "0";
     headerBanner.style.padding = "0 40px";
   });
 
-  // Intersection Observer for articles callouts
-  const articleSections = document.querySelectorAll('.articles-section');
-  const observerOptions = {
-    threshold: 0.3
+  // Radar Chart Configuration
+  const skills = {
+    "Process Optimization": 85,
+    "Innovative Design": 80,
+    "Prototyping": 75,
+    "Project Management": 70,
+    "Digital Skills": 65
   };
 
-  const observerCallback = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+  const radarChart = document.querySelector('.radar-chart');
+  const points = [];
+  
+  Object.values(skills).forEach((percent, index) => {
+    const angle = (index * 72 - 90) * (Math.PI / 180);
+    const radius = 40 * (percent / 100);
+    const x = 50 + radius * Math.cos(angle);
+    const y = 50 + radius * Math.sin(angle);
+    points.push(`${x},${y}`);
+    
+    // Create skill labels
+    const label = document.createElement('div');
+    label.className = 'skill-label';
+    label.textContent = Object.keys(skills)[index];
+    label.setAttribute('data-skill', Object.keys(skills)[index]);
+    radarChart.appendChild(label);
+  });
+
+  document.querySelector('.pentagon-skill').setAttribute('points', points.join(' '));
+
+  // CV Section Animations
+  // Modifica l'Observer
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      if (entry.target.classList.contains('cv-section')) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateX(0)";
       }
-    });
-  };
+    }
+  });
+}, observerOptions);
 
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-  articleSections.forEach(section => observer.observe(section));
+// Applica l'Observer a tutte le sezioni
+document.querySelectorAll('.cv-section').forEach((section, index) => {
+  section.style.transitionDelay = `${index * 0.2}s`;
+  observer.observe(section);
+});
+
+  // Contact Card Animation
+  const contactCard = document.querySelector('.contact-card');
+  if (contactCard) {
+    contactCard.style.opacity = "1";
+    contactCard.style.transform = "translateY(0)";
+  }
 });

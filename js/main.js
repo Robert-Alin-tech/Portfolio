@@ -55,23 +55,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.querySelector('.pentagon-skill').setAttribute('points', points.join(' '));
 
-  // CV Section Animations
-  // Modifica l'Observer
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -100px 0px"
-};
+// In main.js, sostituisci le animazioni con:
+document.querySelectorAll('.slide-in, .fade-in').forEach(el => {
+  el.style.opacity = '0';
+});
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      if (entry.target.classList.contains('cv-section')) {
-        entry.target.style.opacity = "1";
-        entry.target.style.transform = "translateX(0)";
-      }
+    if(entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
     }
   });
-}, observerOptions);
+}, { threshold: 0.1 });
+
+document.querySelectorAll('[class*="slide"], [class*="fade"]').forEach(el => {
+  observer.observe(el);
+});
 
 // Applica l'Observer a tutte le sezioni
 document.querySelectorAll('.cv-section').forEach((section, index) => {
