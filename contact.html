@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Separa gli stili specifici della pagina in un file dedicato se preferisci -->
+  <link rel="stylesheet" href="css/style_contact.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="top-menu glass-header">
+  <!-- Top Menu con Banner -->
+  <header class="top-menu">
     <div class="menu-container">
       <nav class="menu">
         <ul>
@@ -38,16 +40,20 @@
     </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Contenuto principale -->
   <main class="main contact-main">
     <div class="contact-container">
-      <!-- Left Column - Contact Details -->
+      <!-- Colonna Sinistra - Dettagli di Contatto -->
       <div class="contact-details slide-in-down">
         <div class="detail-card">
           <h3>Robert Alin Tapu</h3>
           <div class="detail-item">
             <i class="icon">📍</i>
             <p>Via Sette Martiri n°80<br>05018 Orvieto, Italy</p>
+          </div>
+          <!-- Mappa incorporata -->
+          <div class="map-embed">
+            <iframe src="https://maps.app.goo.gl/jrn4xPYbBSK139ct9" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="detail-item">
             <i class="icon">📧</i>
@@ -66,7 +72,7 @@
         </div>
       </div>
 
-      <!-- Right Column - Contact Form -->
+      <!-- Colonna Destra - Form di Contatto e Rating -->
       <div class="contact-form slide-in-right">
         <form id="contactForm">
           <div class="form-group">
@@ -80,6 +86,19 @@
           <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <!-- Sezione rating con le stelline -->
+          <div class="form-group feedback-stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
           </div>
           <button type="submit" class="cta-button">Send Message</button>
         </form>

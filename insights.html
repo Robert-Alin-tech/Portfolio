@@ -5,25 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Insights - Robert A.T. | Industrial Intelligence Hub</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_insights.css">
 </head>
 <body>
-  <!-- Enhanced Header -->
-  <header class="top-menu glass-header">
+  <!-- Header -->
+  <header class="top-menu">
     <div class="menu-container">
       <nav class="menu">
         <ul>
           <li><a href="index.html" data-banner-title="Introduction" data-banner-desc="Bridging industrial expertise with AI-driven innovation.">Introduction</a></li>
-          <li><a href="about.html" data-banner-title="About" data-banner-desc="Engineering precision meets digital transformation.">About</a></li>
+          <li><a href="about.html" data-banner-title="About" data-banner-desc="Discover my professional journey and technical expertise.">About</a></li>
           <li><a href="projects.html" data-banner-title="Projects" data-banner-desc="Where ideas become industrial solutions.">Projects</a></li>
-          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="The cognitive foundry of industrial innovation." class="active">Insights</a></li>
-          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's engineer success together.">Contact</a></li>
+          <li><a href="insights.html" data-banner-title="Insights" data-banner-desc="Curated knowledge and industry trends." class="active">Insights</a></li>
+          <li><a href="contact.html" data-banner-title="Contact" data-banner-desc="Let's shape the future of industry.">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header-banner">
-      <div class="banner-content">
+      <div class="banner-left">
         <h1 class="banner-title">Insights</h1>
-        <p class="banner-subtitle">Curated Knowledge Repository</p>
+      </div>
+      <div class="banner-right">
+        <p class="banner-desc">"Curated knowledge and industry trends."</p>
       </div>
     </div>
   </header>
@@ -38,52 +41,16 @@
     </ul>
   </div>
 
-  <!-- Main Content -->
+  <!-- Main Content: Insights Page -->
   <main class="main insights-main">
-    <div class="content-disclaimer slide-in-down">
-      <p>🌟 <strong>Disclaimer:</strong> This section contains curated resources I find valuable for industrial innovation. Content is periodically updated as new developments emerge.</p>
-    </div>
-
-    <div class="language-toggle">
-      <button class="lang-btn active" data-lang="it">Italiano</button>
-      <button class="lang-btn" data-lang="en">English</button>
-    </div>
-
-    <div class="insights-container">
-      <!-- Left Column: Video Section -->
+    <section class="insights-container">
+      <!-- Left Column: Recommended Resources (narrower) -->
       <div class="insights-left">
-        <section class="video-section slide-in-right">
-          <h2 class="section-title"><span class="gold-underline">Featured</span> Videos</h2>
-          
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-              <h3>Industry 5.0: The Human-Centric Revolution</h3>
-              <p class="video-desc">Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing</p>
-              <div class="video-meta">
-                <span class="duration">15:30</span>
-                <span class="category">Future Trends</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Altri video... -->
-        </section>
-      </div>
-
-      <!-- Right Column: Resources -->
-      <div class="insights-right">
-        <section class="knowledge-section slide-in-left">
-          <h2 class="section-title"><span class="gold-underline">Recommended</span> Resources</h2>
-          
+        <section class="knowledge-section slide-in-down">
+          <h2 class="section-title">Recommended Resources</h2>
           <div class="knowledge-card">
             <div class="card-header">
-              <h3>📚 Essential Reading</h3>
-              <div class="card-actions">
-                <button class="filter-btn" data-category="books">Show All</button>
-              </div>
+              <h3>Essential Reading</h3>
             </div>
             <ul class="resource-list">
               <li>
@@ -92,41 +59,87 @@
                   <span class="author">Wallace J. Hopp</span>
                 </a>
               </li>
-              <!-- Altri libri... -->
+              <li>
+                <a href="https://www.example.com/resource2" target="_blank">
+                  Lean Manufacturing Essentials
+                  <span class="author">John Doe</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.example.com/resource3" target="_blank">
+                  Digital Transformation in Industry
+                  <span class="author">Jane Smith</span>
+                </a>
+              </li>
             </ul>
           </div>
-
           <div class="knowledge-card">
             <div class="card-header">
-              <h3>📰 Featured Articles</h3>
-              <div class="card-actions">
-                <button class="filter-btn" data-category="articles">Filter</button>
-              </div>
+              <h3>Featured Articles</h3>
             </div>
             <div class="article-card">
-              <h4>Automazione Industriale: Trend 2024</h4>
-              <p>Analisi delle nuove frontiere dell'automazione nelle PMI italiane</p>
-              <a href="#" class="cta-link">Leggi articolo →</a>
+              <h4>Industrial Automation Trends 2024</h4>
+              <p>An in-depth analysis of emerging technologies in industrial automation.</p>
+              <a href="#" class="cta-link">Read Article →</a>
             </div>
           </div>
         </section>
       </div>
-    </div>
 
-    <div class="dynamic-content-notice slide-in-up">
-      <p>🔄 This content is dynamically updated based on the latest industrial innovations and personal research findings.</p>
-    </div>
+      <!-- Right Column: Videos (wider) -->
+      <div class="insights-right">
+        <section class="video-section slide-in-up">
+          <h2 class="section-title">Featured Videos</h2>
+          <!-- Video Card 1 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/sGI2FFm_8tw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Industry 5.0: The Human-Centric Revolution</h3>
+              <p class="video-desc">Exploring the synergy between human expertise and advanced technologies in next-gen manufacturing.</p>
+              <div class="video-meta">
+                <span class="duration">15:30</span>
+                <span class="category">Future Trends</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 2 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Smart Manufacturing: Integration & Innovation</h3>
+              <p class="video-desc">A comprehensive overview of smart manufacturing and digital integration in modern factories.</p>
+              <div class="video-meta">
+                <span class="duration">12:45</span>
+                <span class="category">Innovation</span>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 3 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Data-Driven Decision Making</h3>
+              <p class="video-desc">How data analytics is revolutionizing decision-making in industrial settings.</p>
+              <div class="video-meta">
+                <span class="duration">10:20</span>
+                <span class="category">Analytics</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
   </main>
 
-  <!-- Enhanced Footer -->
-  <footer class="footer glass-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </div>
-    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Robert A.T. | Repository of Industrial Knowledge</p>
   </footer>
 
   <script src="js/main.js"></script>

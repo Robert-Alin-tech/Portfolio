@@ -6,6 +6,20 @@ document.addEventListener("DOMContentLoaded", function() {
   const bannerDesc = document.querySelector('.banner-desc');
   const menuLinks = document.querySelectorAll('.menu a');
 
+  // Menu Push Effect
+const topMenu = document.querySelector('.top-menu');
+const mainContent = document.querySelector('.main');
+
+topMenu.addEventListener('mouseenter', () => {
+  topMenu.classList.add('top-menu-expanded');
+  mainContent.style.marginTop = `${topMenu.offsetHeight}px`;
+});
+
+topMenu.addEventListener('mouseleave', () => {
+  topMenu.classList.remove('top-menu-expanded');
+  mainContent.style.marginTop = '100px';
+});
+
   // Banner hover logic
   menuLinks.forEach(link => {
     link.addEventListener('mouseenter', () => {

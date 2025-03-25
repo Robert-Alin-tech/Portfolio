@@ -1,0 +1,115 @@
+/* Homepage Specific Styles */
+.hero-intro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1A2930 30%, #2C3E50 100%);
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  .hero-content h2 {
+    font-size: 2.8rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+  }
+  .tagline {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  .intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #eee;
+  }
+  .highlight {
+    color: #D4AF37;
+    font-weight: 500;
+  }
+  .interactive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+  .interactive-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: all 0.4s ease;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .interactive-card:hover {
+    transform: translateY(-10px);
+    background: rgba(212, 175, 55, 0.05);
+    border-color: #D4AF37;
+  }
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .interactive-card h3 {
+    color: #D4AF37;
+    margin-bottom: 1rem;
+  }
+  .expertise-list {
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+  }
+  .expertise-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .expertise-list li:last-child {
+    border-bottom: none;
+  }
+  .card-cta {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+    display: inline-block;
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+  }
+  .card-cta:hover {
+    letter-spacing: 1px;
+  }
+  .call-to-action {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #1A2930;
+    border-radius: 15px;
+    margin: 3rem auto;
+  }
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .cta-button {
+    background: #D4AF37;
+    color: #1A2930;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .cta-button.secondary {
+    background: transparent;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+  }
+  .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  }
+  

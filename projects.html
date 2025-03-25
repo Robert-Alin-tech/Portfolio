@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Robert A.T. | Industrial Engineer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_projects.css">
 </head>
 <body>
   <!-- Top Menu with Banner -->
@@ -30,7 +31,7 @@
     </div>
   </header>
 
-  <!-- Social Bar Fixed Bottom Left -->
+  <!-- Social Bar -->
   <div class="social-fixed">
     <ul>
       <li><a href="https://www.linkedin.com/in/robert-alin-tapu-a9a7471b1/" target="_blank"><img src="images/icon-linkedin.png" alt="LinkedIn"></a></li>
@@ -43,7 +44,7 @@
   <!-- Main Content -->
   <main class="main">
     <div class="projects-container">
-      <!-- Left Column -->
+      <!-- Left Column: Innovation Board & Project Stats -->
       <div class="projects-left slide-in-down">
         <div class="innovation-board">
           <h3>Project Evolution Timeline</h3>
@@ -53,7 +54,7 @@
               <div class="timeline-content">
                 <h4>Smart Factory Initiative</h4>
                 <div class="progress-bar">
-                  <div class="progress" style="width: 80%"></div>
+                  <div class="progress" style="width: 80%;"></div>
                 </div>
               </div>
             </div>
@@ -62,7 +63,7 @@
               <div class="timeline-content">
                 <h4>AI Quality Control</h4>
                 <div class="progress-bar">
-                  <div class="progress" style="width: 45%"></div>
+                  <div class="progress" style="width: 45%;"></div>
                 </div>
               </div>
             </div>
@@ -82,7 +83,7 @@
         </div>
       </div>
 
-      <!-- Right Column -->
+      <!-- Right Column: Controls & Projects List -->
       <div class="projects-right">
         <div class="projects-controls slide-in-right">
           <div class="filter-select">
@@ -99,7 +100,7 @@
         </div>
 
         <div class="projects-list">
-          <!-- Engineering Project -->
+          <!-- Project Item 1 -->
           <div class="project-item engineering" data-status="completed">
             <div class="project-summary">
               <div class="project-meta">
@@ -129,7 +130,7 @@
             </div>
           </div>
 
-          <!-- AI Project -->
+          <!-- Project Item 2 -->
           <div class="project-item ai-integration" data-status="in-progress">
             <div class="project-summary">
               <div class="project-meta">
@@ -159,7 +160,7 @@
             </div>
           </div>
 
-          <!-- Design Project -->
+          <!-- Project Item 3 -->
           <div class="project-item process-design" data-status="planned">
             <div class="project-summary">
               <div class="project-meta">
@@ -224,7 +225,7 @@
       item.addEventListener('click', () => {
         const parent = item.closest('.project-item');
         parent.classList.toggle('active');
-        parent.querySelector('.expand-icon').textContent = 
+        parent.querySelector('.expand-icon').textContent =
           parent.classList.contains('active') ? '▲' : '▼';
       });
     });
