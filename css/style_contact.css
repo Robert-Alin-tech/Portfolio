@@ -289,3 +289,47 @@
   #star3 { order: 3; }
   #star4 { order: 2; }
   #star5 { order: 1; }
+
+  /* Rating System */
+.rating-stars {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.rating-stars input[type="radio"] {
+  display: none;
+}
+
+.rating-stars label {
+  font-size: 2.8rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rating-stars label:hover,
+.rating-stars input:checked ~ label,
+.rating-stars label:hover ~ label {
+  color: #D4AF37;
+  transform: scale(1.1);
+}
+
+/* Textarea Grande */
+.large-textarea {
+  min-height: 200px;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  border-radius: 10px;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.large-textarea:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
