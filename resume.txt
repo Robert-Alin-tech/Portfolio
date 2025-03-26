@@ -803,77 +803,76 @@ CODICE CONTACTS:
 
       <!-- Right Column -->
       <div class="contact-content">
-        <!-- Contact Form -->
-        <section class="form-section slide-in-right">
-          <h2 class="section-title">Contact Form</h2>
-          <form class="contact-form" action="https://formspree.io/f/mvgkqqdo" method="POST">
-            <input type="hidden" name="_subject" value="New Message from Portfolio">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Full Name" required>
-            </div>
-            <div class="form-group">
-              <input type="email" name="_replyto" placeholder="Your Email Address" required>
-            </div>
-            <div class="form-group">
-              <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
-            </div>
-            <button type="submit" class="cta-button">
-              Send Message
-              <span class="arrow">→</span>
-            </button>
-          </form>
-        </section>
+        <!-- Form Contatto -->
+      <section class="form-section slide-in-right">
+        <h2 class="section-title">Contact Form</h2>
+        <form class="contact-form" action="https://formspree.io/f/mldjlzdg" method="POST">
+          <input type="hidden" name="_subject" value="New Message from Portfolio">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email Address" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+          </div>
+          <button type="submit" class="cta-button">
+            Send Message
+            <span class="arrow">→</span>
+          </button>
+        </form>
+      </section>
 
         <!-- Feedback Section -->
-        <section class="reviews-section slide-in-right">
-          <div class="feedback-header">
-            <h2 class="section-title">Professional Feedback</h2>
-            <p class="feedback-info">
-              Your constructive feedback helps me grow. All submissions are confidential.
-              <span class="gold-text">Anonymous submissions welcome!</span>
-            </p>
+      <section class="reviews-section slide-in-right">
+        <div class="feedback-header">
+          <h2 class="section-title">Professional Feedback</h2>
+          <p class="feedback-info">
+            Your constructive feedback helps me grow. All submissions are confidential.
+            <span class="gold-text">Anonymous submissions welcome!</span>
+          </p>
+        </div>
+
+        <form class="feedback-form" action="https://formspree.io/f/mldjlzdg" method="POST">
+          <input type="hidden" name="_subject" value="Professional Feedback Received">
+          
+          <div class="rating-container">
+            <div class="rating-stars">
+              <input type="radio" id="star5" name="rating" value="5" required>
+              <label for="star5">★</label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4">★</label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3">★</label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2">★</label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1">★</label>
+            </div>
           </div>
 
-          <form class="feedback-form" action="https://formspree.io/f/YOUR_FEEDBACK_ID" method="POST">
-            <input type="hidden" name="_subject" value="Professional Feedback Received">
-            <div class="form-group">
-              <div class="rating-stars">
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5">★</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">★</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">★</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">★</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">★</label>
-              </div>
-            </div>
+          <div class="form-group">
+            <textarea name="feedback" rows="8" 
+              placeholder="Share your honest feedback (what worked well, areas for improvement)..."
+              class="large-textarea"
+              required></textarea>
+          </div>
 
-            <div class="form-group">
-              <textarea name="feedback" rows="4" 
-                placeholder="Share your honest feedback (what worked well, areas for improvement)..."
-                required></textarea>
-            </div>
+          <div class="privacy-options">
+            <label class="privacy-toggle">
+              <input type="checkbox" name="anonymous">
+              <span class="checkmark"></span>
+              <span class="privacy-label">Submit Anonymously</span>
+            </label>
+          </div>
 
-            <div class="privacy-options">
-              <label class="privacy-toggle">
-                <input type="checkbox" name="anonymous">
-                <span class="checkmark"></span>
-                <span class="privacy-label">Submit Anonymously</span>
-              </label>
-              <p class="privacy-note">
-                Uncheck if you're open to a follow-up discussion
-              </p>
-            </div>
-
-            <button type="submit" class="cta-button secondary">
-              Submit Feedback
-              <span class="arrow">→</span>
-            </button>
-          </form>
-        </section>
+          <button type="submit" class="cta-button secondary">
+            Submit Feedback
+            <span class="arrow">→</span>
+          </button>
+        </form>
+      </section>
       </div>
     </div>
   </main>

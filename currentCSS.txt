@@ -969,3 +969,93 @@ CSS/STYLE_CONTACTS.CSS
       justify-content: center;
     }
   }
+
+  /* Rating System */
+.rating-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+.rating-stars input {
+  display: none;
+}
+
+.rating-stars label {
+  font-size: 2.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating-stars input:hover ~ label,
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: #D4AF37;
+}
+
+/* Feedback Form */
+.feedback-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.feedback-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Uniform Style */
+.contact-form, .feedback-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(212,175,55,0.1);
+}
+
+/* Textarea grande */
+.large-textarea {
+    min-height: 200px !important;
+    resize: vertical;
+    padding: 15px !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Sistema stelline corretto */
+  .rating-stars {
+    display: flex;
+    gap: 6px;
+    flex-direction: row; /* Modifica importante */
+  }
+  
+  .rating-stars input[type="radio"] {
+    display: none;
+  }
+  
+  .rating-stars label {
+    font-size: 2.5rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+    order: 5; /* Inverte l'ordine */
+  }
+  
+  .rating-stars label:hover,
+  .rating-stars label:hover ~ label,
+  .rating-stars input:checked ~ label {
+    color: #D4AF37;
+  }
+  
+  /* Ordine corretto delle stelline */
+  #star1 { order: 5; }
+  #star2 { order: 4; }
+  #star3 { order: 3; }
+  #star4 { order: 2; }
+  #star5 { order: 1; }
