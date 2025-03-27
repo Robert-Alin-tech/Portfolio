@@ -1,115 +1,403 @@
 /* Homepage Specific Styles */
 .hero-intro {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #1A2930 30%, #2C3E50 100%);
-    border-radius: 15px;
-    margin: 2rem auto;
-    max-width: 1200px;
-  }
-  .hero-content h2 {
-    font-size: 2.8rem;
-    color: #D4AF37;
-    margin-bottom: 1.5rem;
-  }
-  .tagline {
-    font-size: 1.4rem;
-    color: #fff;
-    margin-bottom: 2rem;
-  }
-  .intro-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #eee;
-  }
-  .highlight {
-    color: #D4AF37;
-    font-weight: 500;
-  }
-  .interactive-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 3rem 0;
-  }
-  .interactive-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    transition: all 0.4s ease;
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-  }
-  .interactive-card:hover {
-    transform: translateY(-10px);
-    background: rgba(212, 175, 55, 0.05);
-    border-color: #D4AF37;
-  }
-  .card-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  .interactive-card h3 {
-    color: #D4AF37;
-    margin-bottom: 1rem;
-  }
-  .expertise-list {
-    list-style: none;
-    padding-left: 0;
-    flex-grow: 1;
-  }
-  .expertise-list li {
-    padding: 0.8rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .expertise-list li:last-child {
-    border-bottom: none;
-  }
-  .card-cta {
-    color: #D4AF37;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: auto;
-    display: inline-block;
-    padding: 0.8rem 0;
-    transition: all 0.3s ease;
-  }
-  .card-cta:hover {
-    letter-spacing: 1px;
-  }
-  .call-to-action {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: #1A2930;
-    border-radius: 15px;
-    margin: 3rem auto;
-  }
-  .cta-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  .cta-button {
-    background: #D4AF37;
-    color: #1A2930;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  .cta-button.secondary {
-    background: transparent;
-    border: 2px solid #D4AF37;
-    color: #D4AF37;
-  }
-  .cta-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-  }
-  
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1A2930 30%, #2C3E50 100%);
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.hero-content h2 {
+  font-size: 2.8rem;
+  color: #D4AF37;
+  margin-bottom: 1.5rem;
+}
+.tagline {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #eee;
+}
+.highlight {
+  color: #D4AF37;
+  font-weight: 500;
+}
+.interactive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0;
+}
+.interactive-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.4s ease;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.interactive-card:hover {
+  transform: translateY(-10px);
+  background: rgba(212, 175, 55, 0.05);
+  border-color: #D4AF37;
+}
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.interactive-card h3 {
+  color: #D4AF37;
+  margin-bottom: 1rem;
+}
+.expertise-list {
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+}
+.expertise-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.expertise-list li:last-child {
+  border-bottom: none;
+}
+.card-cta {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.8rem 0;
+  transition: all 0.3s ease;
+}
+.card-cta:hover {
+  letter-spacing: 1px;
+}
+.call-to-action {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #1A2930;
+  border-radius: 15px;
+  margin: 3rem auto;
+}
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cta-button {
+  background: #D4AF37;
+  color: #1A2930;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.cta-button.secondary {
+  background: transparent;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* SKILL CHIPS */
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.chip {
+  background: rgba(212, 175, 55, 0.1);
+  color: #D4AF37;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* VALUE SECTION */
+.value-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* SCENARI LIST */
+.scenario-list {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.scenario-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid #D4AF37;
+  border-radius: 8px;
+  text-align: left;
+}
+/* Enhanced Scenario Section */
+.scenario-container {
+  background: linear-gradient(135deg, #1A2930 30%, #2C3E50 100%);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.scenario-list {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.scenario-item {
+  background: rgba(212, 175, 55, 0.1);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid #D4AF37;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.scenario-item:hover {
+  transform: translateX(10px);
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.scenario-item p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.scenario-item strong {
+  color: #D4AF37;
+}
+
+/* Value Cards Hover Effect */
+.value-card:hover {
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Social Bar Consistency */
+.social-fixed {
+  bottom: 30px;
+  left: 30px;
+  padding: 12px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.social-fixed img {
+  filter: brightness(0.9);
+  transition: all 0.3s ease;
+}
+
+.social-fixed a:hover img {
+  filter: brightness(1.2);
+  transform: rotate(10deg);
+}
+/* Animazioni Personalizzate */
+@keyframes glow-pulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.4; }
+}
+
+.animate-glow {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Stile Colonne */
+.dual-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.gold-heading {
+  color: #D4AF37;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Scenario Grid */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.scenario-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.scenario-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
+}
+
+.scenario-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Legenda Radar */
+.skill-legend {
+  margin-top: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.legend-color.tech {
+  background: rgba(212, 175, 55, 0.6);
+}
+
+.legend-color.econ {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Liste Specializzate */
+.tech-list li::before {
+  content: '⚙️';
+  margin-right: 0.5rem;
+}
+
+.econ-list li::before {
+  content: '📊';
+  margin-right: 0.5rem;
+}
+/* Enhanced CTA Section */
+.golden-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #B38F2F 100%);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+}
+
+.cta-container h2 {
+  color: #1A2930;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.cta-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cta-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.cta-list li {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+/* CTA Buttons Contrast */
+.cta-button {
+  background: #1A2930;
+  color: #D4AF37 !important;
+  border: 2px solid #1A2930;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: #1A2930 !important;
+  border: 2px solid #1A2930;
+}
+
+/* Skill Chips Animation */
+.chip {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(212, 175, 55, 0.2);
+}
+
+/* Banner Title Animation */
+.banner-title {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #D4AF37;
+  transition: width 0.5s ease;
+}
+
+.top-menu:hover .banner-title::after {
+  width: 100%;
+}
