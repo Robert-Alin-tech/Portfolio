@@ -63,6 +63,13 @@
     border-radius: 8px;
     margin-top: 1rem;
     transition: transform 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .whatsapp-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
   }
   
   /* Contact Form Styling */
